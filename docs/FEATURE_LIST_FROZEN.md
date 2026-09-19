@@ -105,13 +105,11 @@ informative rather than disappointing.
 | # | feature | construction | expected | conf |
 |---|---|---|---|---|
 | C1 | `zero_return_minutes` | count of the 480 1m bars with no price change | **+** illiquidity premium | low |
-| C2 | `amihud` | `\|return\| / dollar volume`, 30d mean | **+** illiquid reverts more | med |
 | C3 | `roll_spread` | `2√(−cov(r_t, r_{t−1}))` on 1m returns | **+** wider spread, more reversion | low |
 | C4 | `kyle_lambda` | within-bar regression of 1m returns on signed volume | **+** impact-sensitive reverts | low |
 | C6 | `vpin_perp_z` | perp signed VPIN, z-scored 30d *(amendment)* | **−** toxic flow precedes reversal | med |
 | C5 | `premium_reversion_speed` | AR(1) coefficient on the 1m premium index | **−** slow reversion = low arb capacity, dislocation persists | med |
 
-| C7 | `order_flow_autocorr` | serial correlation of signed taker volume, 30d | **−** persistent flow is informed | low |
 | C8 | `corwin_schultz` | high-low spread estimator, adjacent periods | **+** cross-check on C3 | low |
 
 > **Built 2026-08-10 — all 8 passed Stage 0/1 and the truncation test.**
@@ -140,11 +138,8 @@ testable rather than assumed.
 | # | feature | construction | expected | conf |
 |---|---|---|---|---|
 | D1 | `retail_attention_div` | `log(trade_count / mean) − log(volume / mean)` | **−** retail-driven reverts | med |
-| D2 | `path_efficiency` | `\|net return\| / Σ\|1m returns\|`, signed by net return | **+** clean trends persist | med |
 | D3 | `volume_concentration` | Herfindahl of the 480 per-minute volumes | **−** burst-driven reverts | med |
 | D4 | `close_vs_vwap` | `(close − intra-bar VWAP) / VWAP` | **+** buyers held into the close | med |
-| D5 | `jump_share` | `(RV − BV) / RV`, bipower vs realised variance | **−** jumps revert | med |
-| D6 | `signed_jump` | jump component signed by its direction | **−** direction matters | low |
 | D7 | `move_timing` | share of the 8h return realised in the first hour vs last | **+** early-and-held beats late | med |
 | D8 | `realized_skew` | 3rd moment of the 480 1m returns | **+** crash-shaped moves bounce | low |
 | D9 | `realized_kurt` | 4th moment of the 1m returns | **−** fat-tailed bars revert | low |
@@ -156,17 +151,13 @@ testable rather than assumed.
 | # | feature | construction | expected | conf |
 |---|---|---|---|---|
 | E1 | `resid_reversal_8h` | `−(residual return 8h) / σ_ε` — **the benchmark** | **+** measured at IC +0.0133 | high |
-| E2 | `resid_reversal_agreement` | **signed magnitude**: mean of standardised reversal across 8/24/72/168h *(revised at build, see below)* | **+** conviction across horizons | med |
 | E3 | `variance_ratio_72h` | `Var(72h) / (9 × Var(8h))` on 1h residuals, 90d | **−** trending coins revert less | med |
 | E4 | `reversal_x_vr` | E1 × (1 − E3), explicit interaction | **+** reverse harder where reversion is real | med |
-| E5 | `reversal_x_volume` | E1 × `−volume_surprise` (Campbell–Grossman–Wang) | **+** low-volume moves revert more | med |
-| E6 | `idio_share` | `σ_ε / σ_total` — free from Step 6; also the BTC-decoupling measure | **+** more idiosyncratic content | low |
 
 | E7 | `beta_momentum` | change in β over 30d | **?** becoming more systematic | low |
 | E8 | `beta_instability` | within-window variance of rolling β | **−** unstable β = noisier residual | low |
 | E9 | `idio_vol_momentum` | change in `σ_ε` over 30d | **−** vol expansion reverts | low |
 | E10 | `drawdown_from_peak` | distance below trailing 30d peak | **+** position in own cycle | med |
-| E11 | `vol_term_slope` | `σ(4h) / σ(24h)` on residuals | **−** short-vol spike reverts | med |
 | E13 | `volume_share_rotation` | change in this coin's share of universe volume | **−** attention rotation reverts | med |
 | E14 | `session_rel_volume` | volume vs this coin's own norm *for that UTC session* | **−** | low |
 
@@ -237,7 +228,6 @@ Asia/Europe/US structure the 8h grid already encodes — raw session is excluded
 | # | feature | construction | expected | conf |
 |---|---|---|---|---|
 | G1 | `basis_z` | perp−spot basis, z-scored on 30d | **−** rich perp reverts | med |
-| G2 | `basis_change_8h` | change in basis over the bar | **−** | low |
 | G3 | `perp_spot_vol_ratio` | perp quote_volume ÷ spot quote_volume, z-scored | **−** leverage froth | med |
 | G4 | `aggressor_divergence` | taker-buy share in perp − same in spot | **−** leveraged longs vs spot sellers is fragile | med |
 | G5 | `perp_spot_return_gap` | perp return − spot return over the bar | **−** mean-reverting dislocation | med |

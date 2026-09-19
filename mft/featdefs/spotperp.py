@@ -46,7 +46,6 @@ class SpotPerp(Family):
     # Not stable coin characteristics, so Stage 3 persistence does not
     # apply. Classified from construction, not from any score.
     change_columns = (
-        "basis_change_8h",
         "perp_spot_return_gap",
     )
     input_datasets = ("perp_klines", "spot_klines", "premium_index")
@@ -124,7 +123,7 @@ class SpotPerp(Family):
             g6 = self._leadlag(pt, pc, st, sc, t_obs)
 
             df = pd.DataFrame({
-                "basis_z": g1, "basis_change_8h": g2,
+                "basis_z": g1,
                 "perp_spot_vol_ratio": g3, "aggressor_divergence": g4,
                 "perp_spot_return_gap": g5, "perp_spot_leadlag": g6,
                 "perp_spot_tradecount_ratio": g7,

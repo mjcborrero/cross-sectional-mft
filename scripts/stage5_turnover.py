@@ -35,10 +35,9 @@ question is undefined rather than badly answered.
 
 A HIGH SCORE IS NOT A GOOD SCORE
 --------------------------------
-Both ends of this scale are expensive in different currencies. `amihud`
-persists at +0.926 across 90-day-disjoint snapshots, so it will price as nearly
-free to trade -- and that is exactly what makes it a static tilt with no timing
-in it. Reading low turnover as quality would invert the stage's purpose.
+Both ends of this scale are expensive in different currencies. A feature that
+persists at +0.9 across 90-day-disjoint snapshots will price as nearly free to
+trade -- and that is exactly what makes it a static tilt with no timing in it. Reading low turnover as quality would invert the stage's purpose.
 """
 
 from __future__ import annotations

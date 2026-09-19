@@ -295,6 +295,19 @@ starting point for a *directional* model.
 
 ---
 
+### Added 2026-09: two overfitting controls that should have been pre-registered
+
+Neither the Deflated Sharpe Ratio nor combinatorial purged CV was in the
+original plan. Both were added after the holdouts were spent, on train only.
+DSR = 0.994 for the construction search (upper bound: the IC-based feature
+search is not deflated). CPCV: per-split IC uniform at +0.040..+0.066; full-span
+paths expose −24% to −43% drawdowns in the 2020–22 warm-up the walk-forward
+never scored; on identical bars every CPCV path beats the walk-forward by
+~2.4 sd, which reads as non-stationarity. Details in the README and
+`results/deflated_sharpe.json`, `results/cpcv.json`. The omission is the
+lesson: both are cheap, and a plan that pre-registers holdouts should
+pre-register these too.
+
 ## 10. What the record shows about the process
 
 The pre-registration worked. Every threshold that was later inconvenient had

@@ -101,14 +101,6 @@
       "n_pairs": 4626,
       "context": false
     },
-    "order_flow_autocorr": {
-      "family": "C",
-      "autocorr": 0.9819376331989293,
-      "turnover": 0.07264864864864864,
-      "book_size": 4.0,
-      "n_pairs": 4625,
-      "context": false
-    },
     "corwin_schultz": {
       "family": "C",
       "autocorr": 0.9943799702349604,
@@ -145,14 +137,6 @@
       "family": "D",
       "autocorr": -0.04269757983137644,
       "turnover": 0.7752190639025432,
-      "book_size": 4.0,
-      "n_pairs": 4679,
-      "context": false
-    },
-    "jump_share": {
-      "family": "D",
-      "autocorr": 0.1757958475893,
-      "turnover": 0.7057063475101517,
       "book_size": 4.0,
       "n_pairs": 4679,
       "context": false
@@ -205,14 +189,6 @@
       "n_pairs": 4596,
       "context": false
     },
-    "resid_reversal_agreement": {
-      "family": "E",
-      "autocorr": 0.6412282576011984,
-      "turnover": 0.43048302872062666,
-      "book_size": 4.0,
-      "n_pairs": 4596,
-      "context": false
-    },
     "variance_ratio_72h": {
       "family": "E",
       "autocorr": 0.9927291020869923,
@@ -227,14 +203,6 @@
       "turnover": 0.7166252541224305,
       "book_size": 4.0,
       "n_pairs": 4427,
-      "context": false
-    },
-    "idio_share": {
-      "family": "E",
-      "autocorr": 0.9953171401800771,
-      "turnover": 0.021785248041775458,
-      "book_size": 4.0,
-      "n_pairs": 4596,
       "context": false
     },
     "beta_momentum": {
@@ -267,14 +235,6 @@
       "turnover": 0.1472783211147104,
       "book_size": 4.0,
       "n_pairs": 4626,
-      "context": false
-    },
-    "vol_term_slope": {
-      "family": "E",
-      "autocorr": 0.9894080493679985,
-      "turnover": 0.05120515078142197,
-      "book_size": 4.0,
-      "n_pairs": 4543,
       "context": false
     },
     "volume_share_rotation": {
@@ -517,30 +477,6 @@
       "n_pairs": 4382,
       "context": false
     },
-    "risk_adjusted_momentum": {
-      "family": "H",
-      "autocorr": 0.5882867448265581,
-      "turnover": 0.4523717807616113,
-      "book_size": 4.0,
-      "n_pairs": 4543,
-      "context": false
-    },
-    "vol_term_slope_8h_24h": {
-      "family": "H",
-      "autocorr": 0.9660890153313788,
-      "turnover": 0.09646081021576398,
-      "book_size": 4.0,
-      "n_pairs": 4542,
-      "context": false
-    },
-    "hurst_short": {
-      "family": "H",
-      "autocorr": 0.9882437686550893,
-      "turnover": 0.052794345040865914,
-      "book_size": 4.0,
-      "n_pairs": 4527,
-      "context": false
-    },
     "hurst_short_minus_long": {
       "family": "H",
       "autocorr": 0.9862288078916424,
@@ -555,14 +491,6 @@
       "turnover": 0.06448613928329952,
       "book_size": 4.0,
       "n_pairs": 4437,
-      "context": false
-    },
-    "semivar_ratio_1d": {
-      "family": "I",
-      "autocorr": 0.9777294579551503,
-      "turnover": 0.07093491510666086,
-      "book_size": 4.0,
-      "n_pairs": 4594,
       "context": false
     },
     "max_daily_ret_30d": {
@@ -587,14 +515,6 @@
       "turnover": 0.24956868665085186,
       "book_size": 4.0,
       "n_pairs": 4637,
-      "context": false
-    },
-    "bar_range": {
-      "family": "I",
-      "autocorr": 0.5925167356981877,
-      "turnover": 0.46481620004274415,
-      "book_size": 4.0,
-      "n_pairs": 4679,
       "context": false
     },
     "bar_range_zscore_30d": {
@@ -635,22 +555,6 @@
       "turnover": 0.9505291853752406,
       "book_size": 4.0,
       "n_pairs": 4677,
-      "context": false
-    },
-    "oi_drawdown_30d": {
-      "family": "I",
-      "autocorr": 0.9492413212288315,
-      "turnover": 0.14043841471312007,
-      "book_size": 4.0,
-      "n_pairs": 3310,
-      "context": false
-    },
-    "oi_distance_from_low_30d": {
-      "family": "I",
-      "autocorr": 0.9397905997271221,
-      "turnover": 0.1614336861768369,
-      "book_size": 4.0,
-      "n_pairs": 3218,
       "context": false
     },
     "funding_rate_change": {

@@ -69,13 +69,6 @@
       "context": 0.0,
       "windowed": false
     },
-    "amihud": {
-      "autocorr": 0.9997665024480665,
-      "noise_spread": 0.004326207457583593,
-      "rank_stability": 0.9994690773833224,
-      "context": 0.0,
-      "windowed": true
-    },
     "roll_spread": {
       "autocorr": 0.7093249220925548,
       "noise_spread": 0.8839949084573483,
@@ -96,13 +89,6 @@
       "rank_stability": 0.5696248831565431,
       "context": 0.0,
       "windowed": false
-    },
-    "order_flow_autocorr": {
-      "autocorr": 0.9926799896375134,
-      "noise_spread": 0.0761674290385271,
-      "rank_stability": 0.987680099510144,
-      "context": 0.0,
-      "windowed": true
     },
     "corwin_schultz": {
       "autocorr": 0.9988950329163286,
@@ -125,13 +111,6 @@
       "context": 0.0,
       "windowed": false
     },
-    "path_efficiency": {
-      "autocorr": -0.033377757817954316,
-      "noise_spread": 1.8377067833020937,
-      "rank_stability": 0.49489086288440826,
-      "context": 0.0,
-      "windowed": false
-    },
     "volume_concentration": {
       "autocorr": 0.2230460941227746,
       "noise_spread": 1.556155520818126,
@@ -143,20 +122,6 @@
       "autocorr": -0.029155762559333047,
       "noise_spread": 2.208474354668146,
       "rank_stability": 0.475324858906689,
-      "context": 0.0,
-      "windowed": false
-    },
-    "jump_share": {
-      "autocorr": 0.26028644098644466,
-      "noise_spread": 1.124935237625533,
-      "rank_stability": 0.6123673650046214,
-      "context": 0.0,
-      "windowed": false
-    },
-    "signed_jump": {
-      "autocorr": 0.04841600498266804,
-      "noise_spread": 1.5279897500241728,
-      "rank_stability": 0.548313335734546,
       "context": 0.0,
       "windowed": false
     },
@@ -202,13 +167,6 @@
       "context": 0.0,
       "windowed": false
     },
-    "resid_reversal_agreement": {
-      "autocorr": 0.7090818212023361,
-      "noise_spread": 0.6472999851496402,
-      "rank_stability": 0.8293820772721487,
-      "context": 0.0,
-      "windowed": false
-    },
     "variance_ratio_72h": {
       "autocorr": 0.9955734706767903,
       "noise_spread": 0.04503679814505456,
@@ -222,20 +180,6 @@
       "rank_stability": 0.4536607831007153,
       "context": 0.0,
       "windowed": false
-    },
-    "reversal_x_volume": {
-      "autocorr": 0.08483909811146892,
-      "noise_spread": 3.4107346437150095,
-      "rank_stability": 0.3991192840189829,
-      "context": 0.0,
-      "windowed": false
-    },
-    "idio_share": {
-      "autocorr": 0.9973367799979717,
-      "noise_spread": 0.028748786461054783,
-      "rank_stability": 0.995988269536766,
-      "context": 0.0,
-      "windowed": true
     },
     "beta_momentum": {
       "autocorr": 0.9947053775246298,
@@ -262,13 +206,6 @@
       "autocorr": 0.9812628771833534,
       "noise_spread": 0.2080628809318619,
       "rank_stability": 0.9587913185897212,
-      "context": 0.0,
-      "windowed": true
-    },
-    "vol_term_slope": {
-      "autocorr": 0.9953173116946556,
-      "noise_spread": 0.03537569894463128,
-      "rank_stability": 0.9906523309997098,
       "context": 0.0,
       "windowed": true
     },
@@ -370,13 +307,6 @@
       "context": 0.0,
       "windowed": false
     },
-    "basis_change_8h": {
-      "autocorr": -0.46709542091869216,
-      "noise_spread": 1.766177300196027,
-      "rank_stability": 0.43456784342903854,
-      "context": 0.0,
-      "windowed": false
-    },
     "perp_spot_vol_ratio": {
       "autocorr": 0.5955995429902867,
       "noise_spread": 0.7212770691368828,
@@ -461,13 +391,6 @@
       "context": 0.0,
       "windowed": false
     },
-    "resid_zscore_30d": {
-      "autocorr": 0.01763606594498436,
-      "noise_spread": 1.2369087816041808,
-      "rank_stability": 0.47485181729816245,
-      "context": 0.0,
-      "windowed": false
-    },
     "resid_sum_5": {
       "autocorr": 0.815019948756657,
       "noise_spread": 0.43705200410995704,
@@ -481,20 +404,6 @@
       "rank_stability": 0.9477862257799865,
       "context": 0.0,
       "windowed": true
-    },
-    "momentum_zscore_30d": {
-      "autocorr": 0.666454119431437,
-      "noise_spread": 0.5772569506369964,
-      "rank_stability": 0.7331055705065255,
-      "context": 0.0,
-      "windowed": false
-    },
-    "momentum_percentile_90d": {
-      "autocorr": 0.6174005307053345,
-      "noise_spread": 0.5725569875559854,
-      "rank_stability": 0.725470296566391,
-      "context": 0.0,
-      "windowed": false
     },
     "realized_vol_zscore_30d": {
       "autocorr": 0.9792482363406471,
@@ -510,27 +419,6 @@
       "context": 0.0,
       "windowed": true
     },
-    "risk_adjusted_momentum": {
-      "autocorr": 0.6813643589678258,
-      "noise_spread": 0.5620347859658621,
-      "rank_stability": 0.7302731813672675,
-      "context": 0.0,
-      "windowed": false
-    },
-    "vol_term_slope_8h_24h": {
-      "autocorr": 0.9736906802740537,
-      "noise_spread": 0.1388893854926228,
-      "rank_stability": 0.9770638755867279,
-      "context": 0.0,
-      "windowed": true
-    },
-    "hurst_short": {
-      "autocorr": 0.9939889991888536,
-      "noise_spread": 0.05230188808315971,
-      "rank_stability": 0.9900975846289057,
-      "context": 0.0,
-      "windowed": true
-    },
     "hurst_short_minus_long": {
       "autocorr": 0.9929647115183629,
       "noise_spread": 0.05739636894779032,
@@ -542,13 +430,6 @@
       "autocorr": 0.9914657216709414,
       "noise_spread": 0.06384922554802856,
       "rank_stability": 0.9866845509580222,
-      "context": 0.0,
-      "windowed": true
-    },
-    "semivar_ratio_1d": {
-      "autocorr": 0.9630941863743587,
-      "noise_spread": 0.21699458679504824,
-      "rank_stability": 0.9849762160961946,
       "context": 0.0,
       "windowed": true
     },
@@ -573,13 +454,6 @@
       "context": 0.0,
       "windowed": false
     },
-    "bar_range": {
-      "autocorr": 0.5232095276187965,
-      "noise_spread": 1.6018475358702688,
-      "rank_stability": 0.8205631196695506,
-      "context": 0.0,
-      "windowed": false
-    },
     "bar_range_zscore_30d": {
       "autocorr": 0.34840140577623513,
       "noise_spread": 1.7327682734320982,
@@ -591,13 +465,6 @@
       "autocorr": -0.06595936726489943,
       "noise_spread": 1.7380144497451975,
       "rank_stability": 0.4890054992172918,
-      "context": 0.0,
-      "windowed": false
-    },
-    "bpv_ratio": {
-      "autocorr": 0.2604829874542988,
-      "noise_spread": 1.122064804309742,
-      "rank_stability": 0.611840190693359,
       "context": 0.0,
       "windowed": false
     },
@@ -621,20 +488,6 @@
       "rank_stability": 0.5423405566134426,
       "context": 0.0,
       "windowed": false
-    },
-    "oi_drawdown_30d": {
-      "autocorr": 0.9611737796330919,
-      "noise_spread": 0.17071416801730033,
-      "rank_stability": 0.9660529428603616,
-      "context": 0.0,
-      "windowed": true
-    },
-    "oi_distance_from_low_30d": {
-      "autocorr": 0.9745415709800971,
-      "noise_spread": 0.1429124456106436,
-      "rank_stability": 0.9614155702031922,
-      "context": 0.0,
-      "windowed": true
     },
     "funding_rate_change": {
       "autocorr": 0.02498567866254873,

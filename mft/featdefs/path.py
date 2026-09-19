@@ -8,14 +8,7 @@ All eleven come from 1m perp klines. Window statistics reuse the cumsum +
 searchsorted machinery from Family C rather than duplicating it -- the helpers
 are imported from `liquidity` deliberately, since a second copy would drift.
 
-TWO CONSTRUCTION CHOICES worth naming:
-
-  D5 `jump_share` is NOT floored at zero. Barndorff-Nielsen-Shephard's relative
-  jump measure (RV-BV)/RV goes negative when bipower exceeds realised variance,
-  which is noise rather than signal -- but flooring it would build the same 40%
-  tie group that limits `roll_spread` in Family C. A negative reading simply
-  means no jump was detected, and keeping it continuous preserves ranking
-  resolution.
+ONE CONSTRUCTION CHOICE worth naming:
 
   D7 `move_timing` normalises by total absolute movement rather than by the net
   return. Dividing by the net return explodes whenever a bar round-trips to
@@ -136,11 +129,8 @@ class PathAttention(Family):
 
             df = pd.DataFrame({
                 "retail_attention_div": d1,
-                "path_efficiency": d2,
                 "volume_concentration": d3,
                 "close_vs_vwap": d4,
-                "jump_share": d5,
-                "signed_jump": d6,
                 "move_timing": d7,
                 "realized_skew": d8,
                 "realized_kurt": d9,

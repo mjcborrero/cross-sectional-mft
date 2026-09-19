@@ -179,7 +179,6 @@ def main() -> int:
         "mkt_basis_abs": "basis_abs",
         "mkt_premium_vol": "premium_vol",
         "mkt_premium_above0": "premium_time_above_zero",
-        "mkt_idio_share": "idio_share",
         "mkt_corr_btc": "corr_btc_8h_90d",
     }
     for tag, col in alias.items():

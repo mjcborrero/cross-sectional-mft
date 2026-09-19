@@ -8,6 +8,12 @@ horizon. It was built under a pre-registered, gated methodology; it passed its
 first holdout with a Sharpe of +2.83; it lost money on the second. The record
 of *why* it lost is the contribution.
 
+> **Educational research only.** This is a record of a research process
+> and its negative result. It is not investment advice, not a trading system,
+> and not a recommendation to trade anything. Nothing here has been run with
+> real money. Both out-of-sample periods are spent; the numbers cannot be
+> improved by anyone reading this, only re-checked.
+
 The strategy is not the point. The discipline is. Everything a reader needs to
 check every number here is in this repository except the market data itself,
 which is downloaded from Binance's public archive by one script.
@@ -150,8 +156,82 @@ holds at one parameter value and not at its neighbours is noise. This killed
 a 30-day momentum lookback that looked good in isolation, and it is why every
 sweep in this repository prints the whole grid.
 
+**Overfitting controls run on train only.** Deflated Sharpe and combinatorial purged CV — next section.
+
 **Both spent holdouts are diagnostic, not evidence.** Everything run after
 2026 was read is labelled as such in code and in the findings.
+
+## Overfitting controls
+
+Two checks that ask, in different ways, whether the train Sharpe means what
+it appears to mean. Both run on train only; the holdouts are not resampled.
+
+### Deflated Sharpe Ratio — `scripts/deflated_sharpe.py`
+
+Bailey & López de Prado (2014). The reported train Sharpe was *selected*
+from a search, and its return distribution is far from normal. DSR asks: given
+how many configurations were tried and how their Sharpes varied, what is the
+probability that the winner beats the best of that many random draws?
+
+| | value |
+|---|---|
+| train Sharpe (per-bar, n = 2,755) | +2.86 |
+| skew / kurtosis | +0.35 / **14.2** (normal = 3) |
+| PSR vs 0 | 0.99999 |
+| configurations the spec was selected from (N) | 43 — book type × smoothing sweep, hedge variants, tuning |
+| their Sharpes | mean +2.03, sd 0.58, range 0.94 – 2.88 |
+| expected max of N random trials (SR₀) | **+1.29** |
+| **DSR = PSR(SR₀)** | **0.994** (z 2.51) |
+| minimum track record to beat SR₀ at 95% | 1,188 bars (have 2,755) |
+
+The train number survives deflation for the construction search. Two
+qualifications, both stated in the script: feature selection and
+hyperparameter tuning were IC-based and have no Sharpes to enter into V, so
+the search is under-counted and **this DSR is an upper bound**; and the trials
+are highly correlated, which over-counts N and pushes the other way.
+
+The holdouts get PSR against zero — each was one pre-registered test with no
+selection. **2025: 0.998.** **2026: 0.394** — a 39% chance the true
+out-of-sample Sharpe is positive. The 2026 series has skew **−0.94** against
+train's +0.35: the sign flipped. Big moves were wins in train and losses out of
+sample, which is the dispersion finding as a distribution shape.
+
+### Combinatorial Purged Cross-Validation — `scripts/cpcv.py`
+
+López de Prado, AFML ch. 12. The walk-forward gives one out-of-fold path and
+one number. CPCV splits train into 6 groups, fits on every 4-of-6 (15 fits,
+purge 2 bars, embargo 2), and stitches the test predictions into 5 complete
+paths, each bar scored by a model that never saw its group.
+
+| | mean | sd | min | max |
+|---|---|---|---|---|
+| per-split test IC (15 fits) | +0.052 | | +0.040 | +0.066 |
+| path Sharpe, full span 2020-10 → 2024-12 | +2.30 | 0.34 | +1.74 | +2.57 |
+| path max drawdown, full span | | | **−24%** | **−43%** |
+| path Sharpe, **same bars as walk-forward** | **+3.40** | 0.22 | +3.10 | +3.65 |
+| walk-forward (recorded) | +2.86 | | | |
+
+Three things this shows that the walk-forward could not:
+
+1. **The IC is uniform.** Every one of the 15 train/test combinations lands
+   between +0.040 and +0.066. The signal is present across the whole train
+   period, regardless of which years the model saw.
+2. **The book was fragile in train too.** The walk-forward's first 1,803 bars
+   are warm-up and never scored out-of-fold. CPCV scores them, and the
+   2020-10 → 2022-06 stretch carries drawdowns of −24% to −43% against the
+   walk-forward's −8.6%. The violent-regime failure that surfaced in 2026 was
+   already in the data.
+3. **The edge is non-stationary.** On identical bars, every CPCV path beats
+   the walk-forward — by 2.4 sd on average. CPCV trains on groups that come
+   *after* the test group; walk-forward cannot. When that helps this much,
+   later data is more informative about a period than earlier data, which
+   means the relationship is drifting. A walk-forward Sharpe *below* the CPCV
+   spread is the honest one to report.
+
+None of this rescues the strategy. All of it is consistent with the
+dispersion diagnosis, and it was cheap enough that it should have been in the
+pre-registered plan rather than added afterward — which is noted in
+[`docs/PROJECT_FINDINGS.md`](docs/PROJECT_FINDINGS.md) §9.
 
 ## What went wrong along the way
 
@@ -181,6 +261,7 @@ scripts/             the pipeline and the research, in build order
   stage2..8_*.py       feature evaluation stages
   run_strategy.py      execute the frozen spec on a split
   audit*.py            falsification checks
+  deflated_sharpe.py, cpcv.py   overfitting controls
   ridge.py, ic_*.py, dispersion_*.py, rank_hits.py, ...   the post-mortem research
 docs/                design documents (pre-registered) and findings
 results/             every result JSON the findings cite, so numbers can be checked

@@ -71,10 +71,6 @@ class Inherited(Family):
         "hurst_short_minus_long",
         "realized_vol_zscore_30d",
         "realized_vol_percentile_90d",
-        "momentum_zscore_30d",
-        "momentum_percentile_90d",
-        "risk_adjusted_momentum",
-        "resid_zscore_30d",
         "resid_sum_5",
         "resid_sum_20",
         "resid_lag_8h",
@@ -108,33 +104,20 @@ class Inherited(Family):
         # --- anatomy.py: the return-lag ladder, REDEFINED in wall-clock -----
         for tag, k in LAGS.items():
             cols[f"resid_lag_{tag}"] = e.shift(k)
-        cols["resid_zscore_30d"] = _z(e, W30D, MIN30D)
         cols["resid_sum_5"] = e.rolling(5, min_periods=3).sum()
         cols["resid_sum_20"] = e.rolling(20, min_periods=12).sum()
 
         # --- price_ladder.py: momentum and volatility ladders --------------
         mom = e.rolling(3, min_periods=2).sum()          # 24h residual momentum
-        cols["momentum_zscore_30d"] = _z(mom, W30D, MIN30D)
-        cols["momentum_percentile_90d"] = _pct(mom, W90D, MIN90D)
 
         rvol = e.rolling(W30D, min_periods=MIN30D).std()
         cols["realized_vol_zscore_30d"] = _z(rvol, W30D, MIN30D)
         cols["realized_vol_percentile_90d"] = _pct(rvol, W90D, MIN90D)
-        cols["risk_adjusted_momentum"] = mom / rvol.replace(0.0, np.nan)
-
-        # Volatility term slope across SAMPLING rates: 8h-sampled vol against
-        # 24h-sampled vol, each put in per-8h units. Equals 1 under a random
-        # walk, so it reads as a mean-reversion/trending diagnostic.
-        e24 = e.rolling(3, min_periods=2).sum()
-        v8 = e.rolling(W30D, min_periods=MIN30D).std()
-        v24 = e24.rolling(W30D, min_periods=MIN30D).std() / np.sqrt(3.0)
-        cols["vol_term_slope_8h_24h"] = v8 / v24.replace(0.0, np.nan)
 
         # --- hurst.py: MSD slope over a lag ladder -------------------------
         c = e.cumsum()
         short = _hurst(c, W30D, MIN30D)
         long = _hurst(c, W90D, MIN90D)
-        cols["hurst_short"] = short
         cols["hurst_short_minus_long"] = short - long
         cols["hurst_change"] = short - short.shift(W30D)
 

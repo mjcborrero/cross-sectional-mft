@@ -156,12 +156,9 @@ class Liquidity(Family):
 
             df = pd.DataFrame({
                 "zero_return_minutes": c1,
-                "amihud": pd.Series(c2_bar, index=idx)
-                          .rolling(W30D_BARS, min_periods=MIN30D).mean(),
                 "roll_spread": c3,
                 "kyle_lambda": c4,
                 "vpin_perp_z": _z(pd.Series(c6_raw, index=idx)),
-                "order_flow_autocorr": c7,
                 "corwin_schultz": c8_bar.rolling(W30D_BARS, min_periods=MIN30D).mean(),
             }, index=idx)
 

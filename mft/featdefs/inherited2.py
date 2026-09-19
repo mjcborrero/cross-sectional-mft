@@ -65,29 +65,6 @@ class Inherited2(Family):
     )
     warmup_bars = W30D
 
-    def feature_availability(self, ctx: GridContext) -> dict[str, dict[str, int]]:
-        """Open-interest metrics begin long after the perp klines.
-
-        Measured from the filenames, per symbol, never hardcoded: `metrics`
-        starts 2020-09 for BTCUSDT, 2021-12 for eighteen coins and 2023-05 for
-        SUIUSDT, against a grid starting 2020-09-18. The OI features cannot
-        exist before that and their absence is a property of the data.
-
-        The family-wide warm-up trim is applied from each symbol's FIRST grid
-        row, which for these two features is the perp listing, not the metrics
-        start -- so the 30-day rolling max/min window is added back here.
-        Declared from the construction, and identical to the window used in
-        `compute`.
-        """
-        grid = pd.read_parquet(DATA_DIR / "grid/decision_grid_8h.parquet",
-                               columns=["symbol"])
-        out = {}
-        for sym in sorted(grid["symbol"].unique()):
-            s = ctx.dataset_start("metrics", sym)
-            if s is not None:
-                out[sym] = int(s) + W30D * 8 * MS_HOUR
-        return {"oi_drawdown_30d": out, "oi_distance_from_low_30d": dict(out)}
-
     def compute(self, ctx: GridContext) -> pd.DataFrame:
         grid = ctx.grid()
         t_obs = ctx.instants()
@@ -234,28 +211,16 @@ class Inherited2(Family):
         def frame(d):
             return pd.DataFrame(d, index=idx).reindex(columns=P.columns)
 
-        bar_range = frame(rng)
+        range_frame = frame(rng)
         cols = {
-            "semivar_ratio_1d": semivar_ratio,
             "max_daily_ret_30d": max_daily,
             "realized_vol_ratio_1h_24h": vol_ratio_1h_24h,
             "beta_change_3d_7d": beta_change,
-            "bar_range": bar_range,
-            "bar_range_zscore_30d": _z(bar_range),
+            "bar_range_zscore_30d": _z(range_frame),
             "bar_close_location": frame(closeloc),
-            "bpv_ratio": frame(bpv),
             "bpv_zscore_30d": _z(frame(bpv)),
-            # `bpv_term_slope_1h_24h` was emitted here and REMOVED. It contained
-            # no bipower: it was log(v8/v24), which is a monotone map of Family
-            # H's `vol_term_slope_8h_24h` -- measured at rank correlation
-            # 1.0000000000 with it in 100% of bars. The bipower mechanism is
-            # already carried by `bpv_ratio` above. A genuine two-horizon
-            # bipower slope would be a new mechanism, not a fix to this one, so
-            # it is not smuggled in under the name of a broken column.
             "basis_abs": frame(basis_abs),
             "basis_acceleration": frame(basis_a),
-            "oi_drawdown_30d": frame(oi_dd),
-            "oi_distance_from_low_30d": frame(oi_dl),
             "funding_rate_change": frame(f_chg),
             "funding_rate_lag_1": frame(f_l1),
             "funding_rate_lag_2": frame(f_l2),

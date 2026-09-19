@@ -53,10 +53,8 @@ class ReturnRegime(Family):
         "idio_vol_momentum",
         "volume_share_rotation",
         "session_rel_volume",
-        "resid_reversal_agreement",
         "resid_reversal_8h",
         "reversal_x_vr",
-        "reversal_x_volume",
     )
     warmup_bars = W90D + VR_Q      # the variance ratio is the longest window
 
@@ -140,16 +138,12 @@ class ReturnRegime(Family):
 
         cols = {
             "resid_reversal_8h": e1,
-            "resid_reversal_agreement": e2,
             "variance_ratio_72h": e3,
             "reversal_x_vr": e4,
-            "reversal_x_volume": e5,
-            "idio_share": RATIO,
             "beta_momentum": e7,
             "beta_instability": e8_inst,
             "idio_vol_momentum": e9,
             "drawdown_from_peak": e10,
-            "vol_term_slope": e11,
             "volume_share_rotation": e13,
             "session_rel_volume": e14,
         }

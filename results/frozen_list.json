@@ -507,20 +507,6 @@
       "turnover": 0.25862697138780605
     }
   },
-  "removed": {
-    "oi_distance_from_low_30d": "stage3_persistence=-0.042",
-    "hurst_short": "stage3_persistence=-0.008",
-    "semivar_ratio_1d": "stage3_persistence=0.010",
-    "vol_term_slope": "stage3_persistence=0.014",
-    "vol_term_slope_8h_24h": "stage3_persistence=0.061",
-    "order_flow_autocorr": "stage3_persistence=0.096",
-    "oi_drawdown_30d": "stage3_persistence=0.130",
-    "resid_reversal_agreement": "multivariate_r2=0.869",
-    "jump_share": "multivariate_r2=0.849",
-    "idio_share": "multivariate_r2=0.805",
-    "risk_adjusted_momentum": "multivariate_r2=0.801",
-    "bar_range": "multivariate_r2=0.801"
-  },
   "rules": {
     "stage3_persistence_min": 0.15,
     "stage4_multivariate_r2_max": 0.8,

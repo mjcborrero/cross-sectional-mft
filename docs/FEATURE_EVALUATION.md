@@ -211,9 +211,9 @@ every bar. Three context columns exempt: no ordering, so no book.
 | 0.50–0.80 | 17 | medium — 30–50% |
 | < 0.50 | 30 | fast — 60–95%, the expensive end |
 
-**The cheapest and the most expensive are both worth suspicion.** `amihud`
-(absorbed at Stage 4) and the sector/correlation block price at ~1% turnover
-because they barely reorder anything — cheap precisely because they carry no
+**The cheapest and the most expensive are both worth suspicion.** The
+sector/correlation block prices at ~1% turnover because it barely reorders
+anything — cheap precisely because they carry no
 timing. At the other end `basis_acceleration` (−0.593, **95.1%**) and
 `perp_spot_return_gap` (−0.424, 90.5%) reverse their own ordering every bar:
 negative autocorrelation is a second difference behaving like one, and the book
