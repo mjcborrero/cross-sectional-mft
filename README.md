@@ -24,6 +24,46 @@ Fees are assumed zero by design (a maker-only execution model); every figure
 above is gross of costs. Both holdouts were spendable exactly once and are
 now spent. Nothing in this repository was tuned on either of them.
 
+## Month by month
+
+The full-period line hides what "failed out-of-sample" looked like. 2025 had
+three losing months, none worse than −3.4%. 2026 had four, and one of them
+was −9.6% — the May drawdown is the violent-tercile mechanism above, in a
+single month.
+
+**2025 — holdout 1** (`results/strategy_holdout1.json`)
+
+| month | return | Sharpe | max DD | hit |
+|---|---|---|---|---|
+| 2025-01 | +1.74% | +1.23 | -3.53% | 48.4% |
+| 2025-02 | +8.83% | +7.10 | -4.25% | 56.0% |
+| 2025-03 | +2.90% | +2.27 | -4.88% | 54.8% |
+| 2025-04 | +2.32% | +2.67 | -2.47% | 54.4% |
+| 2025-05 | +7.55% | +6.09 | -1.99% | 59.1% |
+| 2025-06 | +7.32% | +11.15 | -1.23% | 70.0% |
+| 2025-07 | +5.05% | +3.56 | -2.97% | 51.6% |
+| 2025-08 | -1.27% | -1.01 | -5.51% | 58.1% |
+| 2025-09 | -1.46% | -1.59 | -3.60% | 45.6% |
+| 2025-10 | +10.20% | +6.51 | -2.21% | 55.9% |
+| 2025-11 | +1.06% | +0.99 | -3.73% | 51.1% |
+| 2025-12 | -3.44% | -3.55 | -5.29% | 47.3% |
+
+9/12 months positive.
+
+**2026 — holdout 2** (`results/strategy_holdout2.json`)
+
+| month | return | Sharpe | max DD | hit |
+|---|---|---|---|---|
+| 2026-01 | -1.08% | -0.95 | -5.30% | 48.4% |
+| 2026-02 | -0.86% | -0.77 | -2.40% | 54.8% |
+| 2026-03 | +5.10% | +4.73 | -1.99% | 61.3% |
+| 2026-04 | +2.09% | +3.13 | -1.82% | 53.3% |
+| 2026-05 | -9.57% | -8.85 | -10.83% | 45.2% |
+| 2026-06 | -1.82% | -1.51 | -2.62% | 55.6% |
+| 2026-07 | +4.00% | +5.95 | -1.17% | 66.7% |
+
+3/7 months positive.
+
 ## Why it failed — the finding
 
 The model's ranking power did not degrade. Its per-bar information coefficient
