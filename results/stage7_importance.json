@@ -1,0 +1,2576 @@
+{
+  "stage": 7,
+  "frozen_hash": "bd22067e3d6325e0",
+  "group_threshold": 0.7,
+  "n_shadow": 20,
+  "n_repeats": 5,
+  "seed": 20260828,
+  "lgb_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "min_child_samples": 200,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 5.0,
+    "verbosity": -1
+  },
+  "groups": [
+    [
+      "aggressor_divergence"
+    ],
+    [
+      "bar_close_location",
+      "close_vs_vwap"
+    ],
+    [
+      "bar_range_zscore_30d"
+    ],
+    [
+      "basis_abs"
+    ],
+    [
+      "basis_acceleration",
+      "perp_spot_return_gap"
+    ],
+    [
+      "basis_z"
+    ],
+    [
+      "beta_change_3d_7d"
+    ],
+    [
+      "beta_instability"
+    ],
+    [
+      "beta_momentum"
+    ],
+    [
+      "bpv_zscore_30d"
+    ],
+    [
+      "btc_resid_lag"
+    ],
+    [
+      "coin_sector_corr",
+      "sector_cohesion"
+    ],
+    [
+      "corr_btc_8h_90d"
+    ],
+    [
+      "corwin_schultz"
+    ],
+    [
+      "crowd_winning"
+    ],
+    [
+      "dispersion_contribution"
+    ],
+    [
+      "drawdown_from_peak"
+    ],
+    [
+      "eth_resid_lag"
+    ],
+    [
+      "funding_cum_7d"
+    ],
+    [
+      "funding_rate_change"
+    ],
+    [
+      "funding_rate_lag_1"
+    ],
+    [
+      "funding_rate_lag_2"
+    ],
+    [
+      "funding_sign_persist"
+    ],
+    [
+      "funding_z"
+    ],
+    [
+      "hurst_change",
+      "hurst_short_minus_long"
+    ],
+    [
+      "idio_vol_momentum"
+    ],
+    [
+      "kyle_lambda"
+    ],
+    [
+      "max_daily_ret_30d"
+    ],
+    [
+      "move_timing"
+    ],
+    [
+      "oi_per_trade"
+    ],
+    [
+      "oi_price_corr"
+    ],
+    [
+      "oi_velocity_24h"
+    ],
+    [
+      "parkinson_ratio"
+    ],
+    [
+      "perp_spot_leadlag"
+    ],
+    [
+      "perp_spot_tradecount_ratio"
+    ],
+    [
+      "perp_spot_vol_ratio"
+    ],
+    [
+      "premium_range"
+    ],
+    [
+      "premium_reversion_speed"
+    ],
+    [
+      "premium_time_above_zero"
+    ],
+    [
+      "premium_vol"
+    ],
+    [
+      "realized_kurt"
+    ],
+    [
+      "realized_skew"
+    ],
+    [
+      "realized_vol_percentile_90d"
+    ],
+    [
+      "realized_vol_ratio_1h_24h"
+    ],
+    [
+      "realized_vol_zscore_30d"
+    ],
+    [
+      "resid_lag_16h"
+    ],
+    [
+      "resid_lag_40h"
+    ],
+    [
+      "resid_lag_8h"
+    ],
+    [
+      "resid_reversal_8h",
+      "sector_rel_reversal_8h"
+    ],
+    [
+      "resid_sum_20"
+    ],
+    [
+      "resid_sum_5"
+    ],
+    [
+      "retail_attention_div"
+    ],
+    [
+      "reversal_x_vr"
+    ],
+    [
+      "roll_spread"
+    ],
+    [
+      "sector_belonging"
+    ],
+    [
+      "sector_decoupling"
+    ],
+    [
+      "sector_dispersion"
+    ],
+    [
+      "sector_rel_agreement"
+    ],
+    [
+      "session_rel_volume"
+    ],
+    [
+      "term_basis_slope"
+    ],
+    [
+      "turnover"
+    ],
+    [
+      "variance_ratio_72h"
+    ],
+    [
+      "volume_concentration"
+    ],
+    [
+      "volume_return_coupling"
+    ],
+    [
+      "volume_share_rotation"
+    ],
+    [
+      "vpin_perp_z"
+    ],
+    [
+      "zero_return_minutes"
+    ]
+  ],
+  "results": {
+    "drawdown_from_peak": {
+      "mean_importance": 0.005919444709778074,
+      "folds_beating": 5,
+      "n_folds": 5
+    },
+    "premium_time_above_zero": {
+      "mean_importance": 0.0046838511887704725,
+      "folds_beating": 4,
+      "n_folds": 5
+    },
+    "session_rel_volume": {
+      "mean_importance": 0.0034842096166004836,
+      "folds_beating": 3,
+      "n_folds": 5
+    },
+    "resid_reversal_8h|sector_rel_reversal_8h": {
+      "mean_importance": 0.002584810483559169,
+      "folds_beating": 3,
+      "n_folds": 5
+    },
+    "hurst_change|hurst_short_minus_long": {
+      "mean_importance": 0.0022665556813995054,
+      "folds_beating": 3,
+      "n_folds": 5
+    },
+    "beta_instability": {
+      "mean_importance": 0.0018199946326797015,
+      "folds_beating": 3,
+      "n_folds": 5
+    },
+    "coin_sector_corr|sector_cohesion": {
+      "mean_importance": 0.003443035901914496,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "zero_return_minutes": {
+      "mean_importance": 0.0028454257240196667,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "volume_share_rotation": {
+      "mean_importance": 0.0028003766221361024,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "resid_lag_16h": {
+      "mean_importance": 0.0024579779757924725,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "roll_spread": {
+      "mean_importance": 0.0022383545069570476,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "funding_cum_7d": {
+      "mean_importance": 0.0022012563168356445,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "idio_vol_momentum": {
+      "mean_importance": 0.002193760262725779,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "premium_reversion_speed": {
+      "mean_importance": 0.0016003711638442747,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "resid_lag_40h": {
+      "mean_importance": 0.0011722409471955737,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "bar_close_location|close_vs_vwap": {
+      "mean_importance": 0.0011146923570268666,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "funding_z": {
+      "mean_importance": 0.0008949779166609791,
+      "folds_beating": 2,
+      "n_folds": 5
+    },
+    "resid_sum_20": {
+      "mean_importance": 0.0024137294233769523,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "reversal_x_vr": {
+      "mean_importance": 0.0020886153678206392,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "perp_spot_vol_ratio": {
+      "mean_importance": 0.001967204763269333,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "realized_vol_zscore_30d": {
+      "mean_importance": 0.0016473124735613992,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "basis_abs": {
+      "mean_importance": 0.0014005612943429348,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "aggressor_divergence": {
+      "mean_importance": 0.001267651888341543,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "sector_rel_agreement": {
+      "mean_importance": 0.0010568162693485074,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "move_timing": {
+      "mean_importance": 0.0009308934768864064,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "basis_z": {
+      "mean_importance": 0.000726771556841285,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "basis_acceleration|perp_spot_return_gap": {
+      "mean_importance": 0.0005382603514230217,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "perp_spot_tradecount_ratio": {
+      "mean_importance": 0.000515462885889859,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "bpv_zscore_30d": {
+      "mean_importance": 0.0004425764956856734,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "premium_vol": {
+      "mean_importance": 0.0004262562031212308,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "premium_range": {
+      "mean_importance": 0.00040052945430727285,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "dispersion_contribution": {
+      "mean_importance": 0.0003317003943615841,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "sector_decoupling": {
+      "mean_importance": 0.00032747931534826024,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "resid_lag_8h": {
+      "mean_importance": 0.0003273701495117087,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "funding_rate_lag_2": {
+      "mean_importance": 0.0002800285650605644,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "beta_momentum": {
+      "mean_importance": 0.00020910715991430355,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "crowd_winning": {
+      "mean_importance": -3.5024039226925e-05,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "volume_concentration": {
+      "mean_importance": -0.00012317545224222178,
+      "folds_beating": 1,
+      "n_folds": 5
+    },
+    "funding_rate_lag_1": {
+      "mean_importance": 0.0008639566247742768,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "parkinson_ratio": {
+      "mean_importance": 0.0008362648909023904,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "oi_velocity_24h": {
+      "mean_importance": 0.0007900513534289438,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "resid_sum_5": {
+      "mean_importance": 0.0007060482422026008,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "funding_sign_persist": {
+      "mean_importance": 0.0006089816192022695,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "oi_price_corr": {
+      "mean_importance": 0.0005861477650569244,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "realized_kurt": {
+      "mean_importance": 0.0005654062561121495,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "corwin_schultz": {
+      "mean_importance": 0.00045851470782218626,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "variance_ratio_72h": {
+      "mean_importance": 0.0004226901191272175,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "realized_vol_ratio_1h_24h": {
+      "mean_importance": 0.00022764715782195823,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "sector_dispersion": {
+      "mean_importance": 0.00016336667439924564,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "max_daily_ret_30d": {
+      "mean_importance": 0.00015730797047064067,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "vpin_perp_z": {
+      "mean_importance": 0.00015154037543950476,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "btc_resid_lag": {
+      "mean_importance": 0.0,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "eth_resid_lag": {
+      "mean_importance": 0.0,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "term_basis_slope": {
+      "mean_importance": 0.0,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "oi_per_trade": {
+      "mean_importance": -5.591110262043735e-05,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "sector_belonging": {
+      "mean_importance": -7.750774395153147e-05,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "perp_spot_leadlag": {
+      "mean_importance": -8.545865571369629e-05,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "turnover": {
+      "mean_importance": -0.00014539069998044274,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "corr_btc_8h_90d": {
+      "mean_importance": -0.00016029183666971592,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "funding_rate_change": {
+      "mean_importance": -0.00017690323813162825,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "bar_range_zscore_30d": {
+      "mean_importance": -0.00021070825885039526,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "realized_skew": {
+      "mean_importance": -0.00022253455781013365,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "realized_vol_percentile_90d": {
+      "mean_importance": -0.00029178208679593777,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "beta_change_3d_7d": {
+      "mean_importance": -0.0003380684014937535,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "retail_attention_div": {
+      "mean_importance": -0.0004506729618965766,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "kyle_lambda": {
+      "mean_importance": -0.0009497791666098109,
+      "folds_beating": 0,
+      "n_folds": 5
+    },
+    "volume_return_coupling": {
+      "mean_importance": -0.0015928023325100411,
+      "folds_beating": 0,
+      "n_folds": 5
+    }
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "group": "aggressor_divergence",
+      "importance": 0.003347024548667493,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "bar_close_location|close_vs_vwap",
+      "importance": 0.0043601744833954206,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "bar_range_zscore_30d",
+      "importance": 0.0006769191581494554,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "basis_abs",
+      "importance": 0.0035132295348170805,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "basis_acceleration|perp_spot_return_gap",
+      "importance": 0.0018562740790269664,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "basis_z",
+      "importance": 0.004504728245295635,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "beta_change_3d_7d",
+      "importance": 1.6556818543635164e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "beta_instability",
+      "importance": 0.0022077880727226383,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "beta_momentum",
+      "importance": 0.0004865157448976323,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "bpv_zscore_30d",
+      "importance": 0.0013118094692266048,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "btc_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "coin_sector_corr|sector_cohesion",
+      "importance": 0.0033088165058744873,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "corr_btc_8h_90d",
+      "importance": 0.002126914382144103,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "corwin_schultz",
+      "importance": 0.0017174515235457058,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "crowd_winning",
+      "importance": 0.003077657846976786,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "dispersion_contribution",
+      "importance": 0.0009017098099149884,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "drawdown_from_peak",
+      "importance": 0.006766007577928487,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "eth_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "funding_cum_7d",
+      "importance": 0.006511287292641767,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "funding_rate_change",
+      "importance": -0.0003031171394912005,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "funding_rate_lag_1",
+      "importance": 0.000659725538892604,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "funding_rate_lag_2",
+      "importance": 0.0016760594771866159,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "funding_sign_persist",
+      "importance": 0.0015206801031617159,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "funding_z",
+      "importance": 0.0037100009552010677,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "hurst_change|hurst_short_minus_long",
+      "importance": 0.00375776100869233,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "idio_vol_momentum",
+      "importance": 0.00668959149234247,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "kyle_lambda",
+      "importance": 0.0011742605151717738,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "max_daily_ret_30d",
+      "importance": 0.001473556850383674,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "move_timing",
+      "importance": 0.0017314611392364745,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "oi_per_trade",
+      "importance": 0.00023561626389021067,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "oi_price_corr",
+      "importance": 0.0008431241442990456,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "oi_velocity_24h",
+      "importance": 0.0025287356321839023,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "parkinson_ratio",
+      "importance": 0.003445728659216096,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "perp_spot_leadlag",
+      "importance": 0.0017276403349571728,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "perp_spot_tradecount_ratio",
+      "importance": 0.0011411468780844994,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "perp_spot_vol_ratio",
+      "importance": 0.007834559174706272,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "premium_range",
+      "importance": 0.0014608208361193338,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "premium_reversion_speed",
+      "importance": -0.0002661826981246229,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "premium_time_above_zero",
+      "importance": 0.006244467793803927,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "premium_vol",
+      "importance": 0.0016308466265482185,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "realized_kurt",
+      "importance": 0.0004368452892667254,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "realized_skew",
+      "importance": 0.00011717133123189255,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "realized_vol_percentile_90d",
+      "importance": 0.0016340306301143067,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "realized_vol_ratio_1h_24h",
+      "importance": 0.002113541567166556,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "realized_vol_zscore_30d",
+      "importance": 0.0016588658579297616,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "resid_lag_16h",
+      "importance": 0.007082497532397235,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "resid_lag_40h",
+      "importance": 0.0020804279300792815,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "resid_lag_8h",
+      "importance": -0.0012844270385582834,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "resid_reversal_8h|sector_rel_reversal_8h",
+      "importance": 0.006247014996656798,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "resid_sum_20",
+      "importance": 0.005554175820676917,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "resid_sum_5",
+      "importance": 0.0032056547903333635,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "retail_attention_div",
+      "importance": 0.0015219537045881484,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "reversal_x_vr",
+      "importance": 0.003613207246792116,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "roll_spread",
+      "importance": 0.002154296812812431,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "sector_belonging",
+      "importance": 0.0016639602636354944,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "sector_decoupling",
+      "importance": 0.0002362530646034311,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "sector_dispersion",
+      "importance": 0.003627216862482885,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "sector_rel_agreement",
+      "importance": 0.0034107046199891742,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "session_rel_volume",
+      "importance": 0.007404718693284936,
+      "beats_shadow": true
+    },
+    {
+      "fold": 0,
+      "group": "term_basis_slope",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "turnover",
+      "importance": 0.0005985926704237865,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "variance_ratio_72h",
+      "importance": 0.0022619161333460674,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "volume_concentration",
+      "importance": 0.0009259082370172228,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "volume_return_coupling",
+      "importance": 0.0013207246792116393,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "volume_share_rotation",
+      "importance": 0.003357213360078963,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "vpin_perp_z",
+      "importance": 0.0006775559588626703,
+      "beats_shadow": false
+    },
+    {
+      "fold": 0,
+      "group": "zero_return_minutes",
+      "importance": 0.0030572802241538508,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "aggressor_divergence",
+      "importance": 0.0044485988110020925,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "bar_close_location|close_vs_vwap",
+      "importance": 0.004917284135929656,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "bar_range_zscore_30d",
+      "importance": -0.0014875664660744428,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "basis_abs",
+      "importance": -0.00014455376190021242,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "basis_acceleration|perp_spot_return_gap",
+      "importance": 0.001631392455730979,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "basis_z",
+      "importance": -0.001454361857456711,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "beta_change_3d_7d",
+      "importance": -6.831961937511788e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "beta_instability",
+      "importance": 0.004229630337185972,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "beta_momentum",
+      "importance": -0.0008377568240019312,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "bpv_zscore_30d",
+      "importance": -0.001947063666425597,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "btc_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "coin_sector_corr|sector_cohesion",
+      "importance": 0.004196607671629164,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "corr_btc_8h_90d",
+      "importance": -7.696191476877639e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "corwin_schultz",
+      "importance": 0.000659725538892604,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "crowd_winning",
+      "importance": 0.0019080368798584436,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "dispersion_contribution",
+      "importance": -0.0015809942278563944,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "drawdown_from_peak",
+      "importance": 0.00653439406137849,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "eth_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "funding_cum_7d",
+      "importance": -0.0011521544332701097,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "funding_rate_change",
+      "importance": -0.00104862883160715,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "funding_rate_lag_1",
+      "importance": 0.001066823137699055,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "funding_rate_lag_2",
+      "importance": -0.0020433115456517867,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "funding_sign_persist",
+      "importance": -0.0010902937925576228,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "funding_z",
+      "importance": -0.0008371200232887135,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "hurst_change|hurst_short_minus_long",
+      "importance": 0.0032476836374056737,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "idio_vol_momentum",
+      "importance": -0.0007205854927700414,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "kyle_lambda",
+      "importance": -0.0027611678925080416,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "max_daily_ret_30d",
+      "importance": 0.00045867845657701216,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "move_timing",
+      "importance": 0.0009640253082797742,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "oi_per_trade",
+      "importance": -0.00039891016106509555,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "oi_price_corr",
+      "importance": 0.001122588685870754,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "oi_velocity_24h",
+      "importance": -0.0009681190271504534,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "parkinson_ratio",
+      "importance": 3.911775809759821e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "perp_spot_leadlag",
+      "importance": -0.00028437700421653363,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "perp_spot_tradecount_ratio",
+      "importance": 0.0006026863892944698,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "perp_spot_vol_ratio",
+      "importance": 0.0012143789601044327,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "premium_range",
+      "importance": 0.001774854559265676,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "premium_reversion_speed",
+      "importance": 0.0006995710692338827,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "premium_time_above_zero",
+      "importance": 0.0065780603959990705,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "premium_vol",
+      "importance": -0.0015895455517195927,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "realized_kurt",
+      "importance": -0.0008591351336599232,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "realized_skew",
+      "importance": -0.0005066204531291918,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "realized_vol_percentile_90d",
+      "importance": -0.0014549076866394671,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "realized_vol_ratio_1h_24h",
+      "importance": 0.001418155188333807,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "realized_vol_zscore_30d",
+      "importance": 0.00014018712843815728,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "resid_lag_16h",
+      "importance": 0.00438373610978444,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "resid_lag_40h",
+      "importance": 0.0023501585178918247,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "resid_lag_8h",
+      "importance": 0.0006211536099777579,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "resid_reversal_8h|sector_rel_reversal_8h",
+      "importance": 0.004176593934928063,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "resid_sum_20",
+      "importance": 0.0011888159600453002,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "resid_sum_5",
+      "importance": 0.0010336185290813233,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "retail_attention_div",
+      "importance": -0.0016716928437245607,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "reversal_x_vr",
+      "importance": 0.005202206969328944,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "roll_spread",
+      "importance": 0.0031326956229048115,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "sector_belonging",
+      "importance": -0.001282971494070935,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "sector_decoupling",
+      "importance": 0.0008514935251013156,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "sector_dispersion",
+      "importance": -0.0007558824465883393,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "sector_rel_agreement",
+      "importance": 0.0008881550518765157,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "session_rel_volume",
+      "importance": 0.002756801259045978,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "term_basis_slope",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "turnover",
+      "importance": 1.3372814977551106e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "variance_ratio_72h",
+      "importance": 0.0010130589631974648,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "volume_concentration",
+      "importance": -0.0012748750278600326,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "volume_return_coupling",
+      "importance": -0.0025197294506684132,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "volume_share_rotation",
+      "importance": 0.002238900336139803,
+      "beats_shadow": true
+    },
+    {
+      "fold": 1,
+      "group": "vpin_perp_z",
+      "importance": -0.0010409872230485492,
+      "beats_shadow": false
+    },
+    {
+      "fold": 1,
+      "group": "zero_return_minutes",
+      "importance": 0.005068023961901119,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "aggressor_divergence",
+      "importance": -0.0013569313483345322,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "bar_close_location|close_vs_vwap",
+      "importance": -0.005358950916310739,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "bar_range_zscore_30d",
+      "importance": 0.0001419155875168887,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "basis_abs",
+      "importance": 0.0005103502858780348,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "basis_acceleration|perp_spot_return_gap",
+      "importance": -0.002511360069866131,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "basis_z",
+      "importance": 0.0011385996752316385,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "beta_change_3d_7d",
+      "importance": 0.0006582699944052542,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "beta_instability",
+      "importance": 0.0021685793430945817,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "beta_momentum",
+      "importance": -0.0014109684374275038,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "bpv_zscore_30d",
+      "importance": 0.0038137084999249533,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "btc_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "coin_sector_corr|sector_cohesion",
+      "importance": 0.0010758293192145551,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "corr_btc_8h_90d",
+      "importance": -2.4016484041317067e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "corwin_schultz",
+      "importance": -0.0016162002101442307,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "crowd_winning",
+      "importance": 0.0005714831543468538,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "dispersion_contribution",
+      "importance": 0.0026532756573830266,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "drawdown_from_peak",
+      "importance": 0.007529167746953597,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "eth_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "funding_cum_7d",
+      "importance": 0.0010190630842077998,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "funding_rate_change",
+      "importance": -0.0011342330417695751,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "funding_rate_lag_1",
+      "importance": 0.0009006181515494802,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "funding_rate_lag_2",
+      "importance": 0.0014639138681549646,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "funding_sign_persist",
+      "importance": 0.0006500825566638959,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "funding_z",
+      "importance": 0.0030047896510786974,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "hurst_change|hurst_short_minus_long",
+      "importance": 0.002624892539879649,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "idio_vol_momentum",
+      "importance": 0.0034179823424259443,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "kyle_lambda",
+      "importance": 0.0001249948828514133,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "max_daily_ret_30d",
+      "importance": -0.0019464268657123696,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "move_timing",
+      "importance": 0.002722050134410439,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "oi_per_trade",
+      "importance": 0.0013945935619447901,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "oi_price_corr",
+      "importance": 0.0014448098467584574,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "oi_velocity_24h",
+      "importance": 0.00044375912558165256,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "parkinson_ratio",
+      "importance": 0.0012188365650969563,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "perp_spot_leadlag",
+      "importance": -0.0011396913335971453,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "perp_spot_tradecount_ratio",
+      "importance": 0.0021221838625602174,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "perp_spot_vol_ratio",
+      "importance": -0.0007155820585947603,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "premium_range",
+      "importance": -0.0016926162957302524,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "premium_reversion_speed",
+      "importance": 0.0032116589113436967,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "premium_time_above_zero",
+      "importance": 0.009985399069361245,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "premium_vol",
+      "importance": 0.0021276421543877863,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "realized_kurt",
+      "importance": 0.0018525442462781344,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "realized_skew",
+      "importance": 0.0009491969488148719,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "realized_vol_percentile_90d",
+      "importance": 0.00044921741740922423,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "realized_vol_ratio_1h_24h",
+      "importance": -0.001142420479510932,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "realized_vol_zscore_30d",
+      "importance": 0.002560484696314294,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "resid_lag_16h",
+      "importance": -0.0015310508576341017,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "resid_lag_40h",
+      "importance": 0.002743337472537971,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "resid_lag_8h",
+      "importance": 0.0026374466110830634,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "resid_reversal_8h|sector_rel_reversal_8h",
+      "importance": -0.0014928428148410916,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "resid_sum_20",
+      "importance": 0.0012657778748140808,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "resid_sum_5",
+      "importance": 0.0008815141301529675,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "retail_attention_div",
+      "importance": -0.00047923802246086915,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "reversal_x_vr",
+      "importance": 0.00046013400106437174,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "roll_spread",
+      "importance": 0.0008722350340460997,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "sector_belonging",
+      "importance": -0.0017444700680921868,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "sector_decoupling",
+      "importance": -0.0017859530859817383,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "sector_dispersion",
+      "importance": 0.001723728559147418,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "sector_rel_agreement",
+      "importance": 0.0019322353069606932,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "session_rel_volume",
+      "importance": 0.005962637992440269,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "term_basis_slope",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "turnover",
+      "importance": -0.0017128119754922662,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "variance_ratio_72h",
+      "importance": 0.0002701854454648475,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "volume_concentration",
+      "importance": -0.0004934295812125553,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "volume_return_coupling",
+      "importance": -0.003825170912762847,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "volume_share_rotation",
+      "importance": 0.00530218468130399,
+      "beats_shadow": true
+    },
+    {
+      "fold": 2,
+      "group": "vpin_perp_z",
+      "importance": 0.0006369826562777237,
+      "beats_shadow": false
+    },
+    {
+      "fold": 2,
+      "group": "zero_return_minutes",
+      "importance": 0.003181092477109293,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "aggressor_divergence",
+      "importance": 0.00036679721081287614,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "bar_close_location|close_vs_vwap",
+      "importance": -0.0003602472606197907,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "bar_range_zscore_30d",
+      "importance": 0.0003220392178267764,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "basis_abs",
+      "importance": 0.0022504537205081643,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "basis_acceleration|perp_spot_return_gap",
+      "importance": -0.00021178172290981927,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "basis_z",
+      "importance": 0.00046777560962296406,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "beta_change_3d_7d",
+      "importance": -0.002056138531446586,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "beta_instability",
+      "importance": 0.002348157144221719,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "beta_momentum",
+      "importance": -0.000787631510718724,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "bpv_zscore_30d",
+      "importance": 0.0006162411473329396,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "btc_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "coin_sector_corr|sector_cohesion",
+      "importance": 0.005861659593630169,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "corr_btc_8h_90d",
+      "importance": -0.0015441507580202796,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "corwin_schultz",
+      "importance": 0.0006511742150294028,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "crowd_winning",
+      "importance": 0.0005059836524159783,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "dispersion_contribution",
+      "importance": 0.0014366224090170943,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "drawdown_from_peak",
+      "importance": 0.005249239250576527,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "eth_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "funding_cum_7d",
+      "importance": 0.0024807936356317254,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "funding_rate_change",
+      "importance": 0.0007325027632602371,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "funding_rate_lag_1",
+      "importance": 0.0005791247629054475,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "funding_rate_lag_2",
+      "importance": 0.001731370167706013,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "funding_sign_persist",
+      "importance": 0.001153882892348837,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "funding_z",
+      "importance": -0.0017324618260715324,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "hurst_change|hurst_short_minus_long",
+      "importance": 0.00011244081164799163,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "idio_vol_momentum",
+      "importance": 0.0010256130344008809,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "kyle_lambda",
+      "importance": -0.0010381671056043026,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "max_daily_ret_30d",
+      "importance": -0.0018219778120437235,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "move_timing",
+      "importance": -0.0010146964507457446,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "oi_per_trade",
+      "importance": -0.0004393924921195946,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "oi_price_corr",
+      "importance": 0.00011680744511004815,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "oi_velocity_24h",
+      "importance": 0.0012079199814418074,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "parkinson_ratio",
+      "importance": -0.0017499283599197654,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "perp_spot_leadlag",
+      "importance": -0.0013924102452137668,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "perp_spot_tradecount_ratio",
+      "importance": -0.00013645729568931842,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "perp_spot_vol_ratio",
+      "importance": 0.0003919053532197084,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "premium_range",
+      "importance": -0.0023732652866285523,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "premium_reversion_speed",
+      "importance": 0.0029589399997270844,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "premium_time_above_zero",
+      "importance": -0.0030877556868578,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "premium_vol",
+      "importance": -0.0012423072199555171,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "realized_kurt",
+      "importance": 0.0002598146909924534,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "realized_skew",
+      "importance": 0.00043611751702304636,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "realized_vol_percentile_90d",
+      "importance": -0.0008373019663496323,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "realized_vol_ratio_1h_24h",
+      "importance": 0.00020414011435120755,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "realized_vol_zscore_30d",
+      "importance": 0.0011686202802832836,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "resid_lag_16h",
+      "importance": -0.00024016484041320118,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "resid_lag_40h",
+      "importance": -0.0014802887436376824,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "resid_lag_8h",
+      "importance": -0.0009049847850115353,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "resid_reversal_8h|sector_rel_reversal_8h",
+      "importance": 0.00015228634198926895,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "resid_sum_20",
+      "importance": 0.0015212259323444707,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "resid_sum_5",
+      "importance": -0.0001550154879030638,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "retail_attention_div",
+      "importance": -0.00395726157499011,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "reversal_x_vr",
+      "importance": -0.0008558601585633805,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "roll_spread",
+      "importance": 0.0027116793799380453,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "sector_belonging",
+      "importance": 0.0011134915328247993,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "sector_decoupling",
+      "importance": 0.0016576832280337823,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "sector_dispersion",
+      "importance": -0.0028132036079309003,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "sector_rel_agreement",
+      "importance": 0.0004224717874541137,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "session_rel_volume",
+      "importance": 0.0006986613539292877,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "term_basis_slope",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "turnover",
+      "importance": 0.00039790947423003485,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "variance_ratio_72h",
+      "importance": -0.0013940477327620368,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "volume_concentration",
+      "importance": 0.0018749232427711705,
+      "beats_shadow": true
+    },
+    {
+      "fold": 3,
+      "group": "volume_return_coupling",
+      "importance": -0.001293069333951942,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "volume_share_rotation",
+      "importance": 0.0012821527502967945,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "vpin_perp_z",
+      "importance": 0.00036297640653357166,
+      "beats_shadow": false
+    },
+    {
+      "fold": 3,
+      "group": "zero_return_minutes",
+      "importance": -2.0741508944778496e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "aggressor_divergence",
+      "importance": -0.0004672297804402148,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "bar_close_location|close_vs_vwap",
+      "importance": 0.0020152013427397865,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "bar_range_zscore_30d",
+      "importance": -0.0007068487916706542,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "basis_abs",
+      "importance": 0.0008733266924116065,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "basis_acceleration|perp_spot_return_gap",
+      "importance": 0.0019267770151331133,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "basis_z",
+      "importance": -0.0010228838884871014,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "beta_change_3d_7d",
+      "importance": -0.00024071066959595322,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "beta_instability",
+      "importance": -0.001854181733826403,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "beta_momentum",
+      "importance": 0.0035953768268220444,
+      "beats_shadow": true
+    },
+    {
+      "fold": 4,
+      "group": "bpv_zscore_30d",
+      "importance": -0.0015818129716305336,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "btc_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "coin_sector_corr|sector_cohesion",
+      "importance": 0.0027722664192241023,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "corr_btc_8h_90d",
+      "importance": -0.0012832444086623095,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "corwin_schultz",
+      "importance": 0.0008804224717874496,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "crowd_winning",
+      "importance": -0.006238281729732687,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "dispersion_contribution",
+      "importance": -0.0017521116766507944,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "drawdown_from_peak",
+      "importance": 0.003518414912053268,
+      "beats_shadow": true
+    },
+    {
+      "fold": 4,
+      "group": "eth_resid_lag",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "funding_cum_7d",
+      "importance": 0.0021472920049670414,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "funding_rate_change",
+      "importance": 0.0008689600589495472,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "funding_rate_lag_1",
+      "importance": 0.001113491532824798,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "funding_rate_lag_2",
+      "importance": -0.0014278891420929848,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "funding_sign_persist",
+      "importance": 0.0008105563363945218,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "funding_z",
+      "importance": 0.00032968082638537707,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "hurst_change|hurst_short_minus_long",
+      "importance": 0.0015900004093718834,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "idio_vol_momentum",
+      "importance": 0.0005561999372296414,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "kyle_lambda",
+      "importance": -0.0022488162329598977,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "max_daily_ret_30d",
+      "importance": 0.0026227092231486102,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "move_timing",
+      "importance": 0.00025162725325108827,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "oi_per_trade",
+      "importance": -0.0010714626857524973,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "oi_price_corr",
+      "importance": -0.0005965912967536832,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "oi_velocity_24h",
+      "importance": 0.0007379610550878102,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "parkinson_ratio",
+      "importance": 0.0012275698320210666,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "perp_spot_leadlag",
+      "importance": 0.0006615449695017914,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "perp_spot_tradecount_ratio",
+      "importance": -0.0011522454048005725,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "perp_spot_vol_ratio",
+      "importance": 0.0011107623869110127,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "premium_range",
+      "importance": 0.0028328534585101593,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "premium_reversion_speed",
+      "importance": 0.0013978685370413316,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "premium_time_above_zero",
+      "importance": 0.003699084371545923,
+      "beats_shadow": true
+    },
+    {
+      "fold": 4,
+      "group": "premium_vol",
+      "importance": 0.001204645006345259,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "realized_kurt",
+      "importance": 0.0011369621876833574,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "realized_skew",
+      "importance": -0.0021085381329912873,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "realized_vol_percentile_90d",
+      "importance": -0.0012499488285141204,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "realized_vol_ratio_1h_24h",
+      "importance": -0.0014551806012308474,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "realized_vol_zscore_30d",
+      "importance": 0.002708404404841501,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "resid_lag_16h",
+      "importance": 0.0025948719348279914,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "resid_lag_40h",
+      "importance": 0.000167569559106473,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "resid_lag_8h",
+      "importance": 0.000567662350067541,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "resid_reversal_8h|sector_rel_reversal_8h",
+      "importance": 0.003840999959062806,
+      "beats_shadow": true
+    },
+    {
+      "fold": 4,
+      "group": "resid_sum_20",
+      "importance": 0.0025386515290039937,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "resid_sum_5",
+      "importance": -0.0014355307506515869,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "retail_attention_div",
+      "importance": 0.002332873927104509,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "reversal_x_vr",
+      "importance": 0.0020233887804811434,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "roll_spread",
+      "importance": 0.0023208656850838504,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "sector_belonging",
+      "importance": -0.00013754895405482942,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "sector_decoupling",
+      "importance": 0.0006779198449845106,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "sector_dispersion",
+      "importance": -0.0009650259951148349,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "sector_rel_agreement",
+      "importance": -0.0013694854195379594,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "session_rel_volume",
+      "importance": 0.0005982287843019504,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "term_basis_slope",
+      "importance": 0.0,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "turnover",
+      "importance": -2.4016484041319842e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "variance_ratio_72h",
+      "importance": -3.766221361025529e-05,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "volume_concentration",
+      "importance": -0.0016484041319269143,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "volume_return_coupling",
+      "importance": -0.0016467666443786416,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "volume_share_rotation",
+      "importance": 0.0018214319828609618,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "vpin_perp_z",
+      "importance": 0.00012117407857210744,
+      "beats_shadow": false
+    },
+    {
+      "fold": 4,
+      "group": "zero_return_minutes",
+      "importance": 0.002941473465878848,
+      "beats_shadow": false
+    }
+  ]
+}

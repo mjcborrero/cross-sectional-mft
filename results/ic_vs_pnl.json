@@ -1,0 +1,44 @@
+{
+  "ridge a=1000": {
+    "ic": {
+      "target (vol-normalised)": 0.03148629868510138,
+      "residual (dollars)": 0.027386000546389667,
+      "raw fwd_ret (dollars)": 0.02224281081851548
+    },
+    "tails": {
+      "res": {
+        "long_bps": -1.5740232648626018,
+        "short_bps": 3.7533735044295824,
+        "spread_bps": -5.327396769292185,
+        "bars": 633
+      },
+      "raw": {
+        "long_bps": -7.350324897832048,
+        "short_bps": -1.9068690103662536,
+        "spread_bps": -5.443455887465797,
+        "bars": 633
+      }
+    }
+  },
+  "lightgbm (8 seeds)": {
+    "ic": {
+      "target (vol-normalised)": 0.03738968273764982,
+      "residual (dollars)": 0.0326099609212605,
+      "raw fwd_ret (dollars)": 0.02606516290726817
+    },
+    "tails": {
+      "res": {
+        "long_bps": -0.5052340581191683,
+        "short_bps": 3.6101348864296603,
+        "spread_bps": -4.115368944548828,
+        "bars": 633
+      },
+      "raw": {
+        "long_bps": -6.899011068408997,
+        "short_bps": -2.418755955028525,
+        "spread_bps": -4.480255113380474,
+        "bars": 633
+      }
+    }
+  }
+}

@@ -1,0 +1,681 @@
+{
+  "stage": 5,
+  "kill_criterion": false,
+  "k": 4,
+  "min_coins": 8,
+  "rebalance": "8h",
+  "results": {
+    "funding_z": {
+      "family": "A",
+      "autocorr": 0.5793128291127526,
+      "turnover": 0.40281042957896984,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "funding_cum_7d": {
+      "family": "A",
+      "autocorr": 0.9833320864647725,
+      "turnover": 0.06223882212839666,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "funding_sign_persist": {
+      "family": "A",
+      "autocorr": 0.9378459925448923,
+      "turnover": 0.10335470020091997,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "crowd_winning": {
+      "family": "A",
+      "autocorr": -0.011713129716861278,
+      "turnover": 0.7527050421986583,
+      "book_size": 4.0,
+      "n_pairs": 4621,
+      "context": false
+    },
+    "oi_velocity_24h": {
+      "family": "B",
+      "autocorr": 0.5912212841202644,
+      "turnover": 0.45148418854415273,
+      "book_size": 4.0,
+      "n_pairs": 3353,
+      "context": false
+    },
+    "oi_price_corr": {
+      "family": "B",
+      "autocorr": 0.9903262909996354,
+      "turnover": 0.03890903596252644,
+      "book_size": 4.0,
+      "n_pairs": 3309,
+      "context": false
+    },
+    "oi_per_trade": {
+      "family": "B",
+      "autocorr": 0.016327286792736328,
+      "turnover": 0.6301354569812444,
+      "book_size": 4.0,
+      "n_pairs": 3359,
+      "context": false
+    },
+    "turnover": {
+      "family": "B",
+      "autocorr": 0.7987589306326379,
+      "turnover": 0.31946098868374034,
+      "book_size": 4.0,
+      "n_pairs": 3358,
+      "context": false
+    },
+    "zero_return_minutes": {
+      "family": "C",
+      "autocorr": 0.8795778239687968,
+      "turnover": 0.25862697138780605,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "roll_spread": {
+      "family": "C",
+      "autocorr": 0.6616920204714194,
+      "turnover": 0.4441245184157806,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "kyle_lambda": {
+      "family": "C",
+      "autocorr": 0.9432056400899912,
+      "turnover": 0.14760098311605044,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "vpin_perp_z": {
+      "family": "C",
+      "autocorr": 0.07606687335634953,
+      "turnover": 0.754863813229572,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "order_flow_autocorr": {
+      "family": "C",
+      "autocorr": 0.9819376331989293,
+      "turnover": 0.07264864864864864,
+      "book_size": 4.0,
+      "n_pairs": 4625,
+      "context": false
+    },
+    "corwin_schultz": {
+      "family": "C",
+      "autocorr": 0.9943799702349604,
+      "turnover": 0.033,
+      "book_size": 4.0,
+      "n_pairs": 4625,
+      "context": false
+    },
+    "premium_reversion_speed": {
+      "family": "C",
+      "autocorr": 0.8337929647482178,
+      "turnover": 0.274442538593482,
+      "book_size": 4.0,
+      "n_pairs": 4664,
+      "context": false
+    },
+    "retail_attention_div": {
+      "family": "D",
+      "autocorr": 0.6409665020499019,
+      "turnover": 0.43177150886294857,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "volume_concentration": {
+      "family": "D",
+      "autocorr": 0.3647196539915431,
+      "turnover": 0.6107341312246206,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "close_vs_vwap": {
+      "family": "D",
+      "autocorr": -0.04269757983137644,
+      "turnover": 0.7752190639025432,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "jump_share": {
+      "family": "D",
+      "autocorr": 0.1757958475893,
+      "turnover": 0.7057063475101517,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "move_timing": {
+      "family": "D",
+      "autocorr": 0.02227619291679417,
+      "turnover": 0.7670709553323359,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "realized_skew": {
+      "family": "D",
+      "autocorr": 0.0833120256798447,
+      "turnover": 0.7375507587091259,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "realized_kurt": {
+      "family": "D",
+      "autocorr": 0.1969464142659221,
+      "turnover": 0.6986802735627271,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "parkinson_ratio": {
+      "family": "D",
+      "autocorr": 0.4894974825677255,
+      "turnover": 0.5373210087625561,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "volume_return_coupling": {
+      "family": "D",
+      "autocorr": 0.2649176437814779,
+      "turnover": 0.6690799316093182,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "resid_reversal_8h": {
+      "family": "E",
+      "autocorr": -0.022762407449945683,
+      "turnover": 0.7715404699738904,
+      "book_size": 4.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "resid_reversal_agreement": {
+      "family": "E",
+      "autocorr": 0.6412282576011984,
+      "turnover": 0.43048302872062666,
+      "book_size": 4.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "variance_ratio_72h": {
+      "family": "E",
+      "autocorr": 0.9927291020869923,
+      "turnover": 0.034024169866726905,
+      "book_size": 4.0,
+      "n_pairs": 4427,
+      "context": false
+    },
+    "reversal_x_vr": {
+      "family": "E",
+      "autocorr": -0.006085840836861965,
+      "turnover": 0.7166252541224305,
+      "book_size": 4.0,
+      "n_pairs": 4427,
+      "context": false
+    },
+    "idio_share": {
+      "family": "E",
+      "autocorr": 0.9953171401800771,
+      "turnover": 0.021785248041775458,
+      "book_size": 4.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "beta_momentum": {
+      "family": "E",
+      "autocorr": 0.9869928921569382,
+      "turnover": 0.04727030625832224,
+      "book_size": 4.0,
+      "n_pairs": 4506,
+      "context": false
+    },
+    "beta_instability": {
+      "family": "E",
+      "autocorr": 0.996177242237574,
+      "turnover": 0.022727272727272728,
+      "book_size": 4.0,
+      "n_pairs": 4543,
+      "context": false
+    },
+    "idio_vol_momentum": {
+      "family": "E",
+      "autocorr": 0.9887919956646741,
+      "turnover": 0.042554371948513095,
+      "book_size": 4.0,
+      "n_pairs": 4506,
+      "context": false
+    },
+    "drawdown_from_peak": {
+      "family": "E",
+      "autocorr": 0.9358079993327151,
+      "turnover": 0.1472783211147104,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "vol_term_slope": {
+      "family": "E",
+      "autocorr": 0.9894080493679985,
+      "turnover": 0.05120515078142197,
+      "book_size": 4.0,
+      "n_pairs": 4543,
+      "context": false
+    },
+    "volume_share_rotation": {
+      "family": "E",
+      "autocorr": 0.31411486627666696,
+      "turnover": 0.5230164670658682,
+      "book_size": 4.0,
+      "n_pairs": 4676,
+      "context": false
+    },
+    "session_rel_volume": {
+      "family": "E",
+      "autocorr": 0.699825803657869,
+      "turnover": 0.37799223635971535,
+      "book_size": 4.0,
+      "n_pairs": 4637,
+      "context": false
+    },
+    "sector_rel_reversal_8h": {
+      "family": "F",
+      "autocorr": -0.013615821644703738,
+      "turnover": 0.7692830722367275,
+      "book_size": 4.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "sector_rel_agreement": {
+      "family": "F",
+      "autocorr": 0.6383016809521149,
+      "turnover": 0.4297214969538729,
+      "book_size": 4.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "coin_sector_corr": {
+      "family": "F",
+      "autocorr": 0.9982052390037399,
+      "turnover": 0.01164298601714028,
+      "book_size": 4.0,
+      "n_pairs": 4434,
+      "context": false
+    },
+    "btc_resid_lag": {
+      "family": "F",
+      "autocorr": null,
+      "turnover": null,
+      "book_size": null,
+      "n_pairs": 0,
+      "context": true
+    },
+    "corr_btc_8h_90d": {
+      "family": "F",
+      "autocorr": 0.9974521287016292,
+      "turnover": 0.011927164046933806,
+      "book_size": 4.0,
+      "n_pairs": 4517,
+      "context": false
+    },
+    "sector_cohesion": {
+      "family": "F",
+      "autocorr": 0.9963188592832812,
+      "turnover": 0.006111862877762743,
+      "book_size": 5.0,
+      "n_pairs": 4434,
+      "context": false
+    },
+    "sector_dispersion": {
+      "family": "F",
+      "autocorr": 0.17735870937810108,
+      "turnover": 0.7300696257615318,
+      "book_size": 3.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "sector_belonging": {
+      "family": "F",
+      "autocorr": 0.9981501101577521,
+      "turnover": 0.011953089760938205,
+      "book_size": 4.0,
+      "n_pairs": 4434,
+      "context": false
+    },
+    "eth_resid_lag": {
+      "family": "F",
+      "autocorr": null,
+      "turnover": null,
+      "book_size": null,
+      "n_pairs": 0,
+      "context": true
+    },
+    "sector_decoupling": {
+      "family": "F",
+      "autocorr": 0.9860293200753626,
+      "turnover": 0.0529149751917005,
+      "book_size": 4.0,
+      "n_pairs": 4434,
+      "context": false
+    },
+    "dispersion_contribution": {
+      "family": "F",
+      "autocorr": 0.10782931370119461,
+      "turnover": 0.7354221061792864,
+      "book_size": 4.0,
+      "n_pairs": 4596,
+      "context": false
+    },
+    "basis_z": {
+      "family": "G",
+      "autocorr": 0.18194090215731273,
+      "turnover": 0.6963899697362732,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "perp_spot_vol_ratio": {
+      "family": "G",
+      "autocorr": 0.4917844752944459,
+      "turnover": 0.5367758322524859,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "aggressor_divergence": {
+      "family": "G",
+      "autocorr": 0.18060897986723914,
+      "turnover": 0.6901581534515923,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "perp_spot_return_gap": {
+      "family": "G",
+      "autocorr": -0.424162514745829,
+      "turnover": 0.9050812139346014,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "perp_spot_leadlag": {
+      "family": "G",
+      "autocorr": 0.9712726082191284,
+      "turnover": 0.08455332335969225,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "perp_spot_tradecount_ratio": {
+      "family": "G",
+      "autocorr": 0.5566705825053673,
+      "turnover": 0.4976491569390402,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "premium_vol": {
+      "family": "G",
+      "autocorr": 0.7894089348701888,
+      "turnover": 0.31255367110347787,
+      "book_size": 4.0,
+      "n_pairs": 4658,
+      "context": false
+    },
+    "premium_time_above_zero": {
+      "family": "G",
+      "autocorr": 0.7540050251291078,
+      "turnover": 0.4027057114434146,
+      "book_size": 4.0,
+      "n_pairs": 4658,
+      "context": false
+    },
+    "premium_range": {
+      "family": "G",
+      "autocorr": 0.5807650889170806,
+      "turnover": 0.47794117647058826,
+      "book_size": 4.0,
+      "n_pairs": 4658,
+      "context": false
+    },
+    "term_basis_slope": {
+      "family": "G",
+      "autocorr": null,
+      "turnover": null,
+      "book_size": null,
+      "n_pairs": 0,
+      "context": true
+    },
+    "resid_lag_8h": {
+      "family": "H",
+      "autocorr": -0.02277128830309735,
+      "turnover": 0.7715451577801958,
+      "book_size": 4.0,
+      "n_pairs": 4595,
+      "context": false
+    },
+    "resid_lag_16h": {
+      "family": "H",
+      "autocorr": -0.022791302282338517,
+      "turnover": 0.7715770570309098,
+      "book_size": 4.0,
+      "n_pairs": 4594,
+      "context": false
+    },
+    "resid_lag_40h": {
+      "family": "H",
+      "autocorr": -0.022743634206044513,
+      "turnover": 0.7714822478762797,
+      "book_size": 4.0,
+      "n_pairs": 4591,
+      "context": false
+    },
+    "resid_sum_5": {
+      "family": "H",
+      "autocorr": 0.7292332051709051,
+      "turnover": 0.3613136700043535,
+      "book_size": 4.0,
+      "n_pairs": 4594,
+      "context": false
+    },
+    "resid_sum_20": {
+      "family": "H",
+      "autocorr": 0.9172666230530993,
+      "turnover": 0.1883587786259542,
+      "book_size": 4.0,
+      "n_pairs": 4585,
+      "context": false
+    },
+    "realized_vol_zscore_30d": {
+      "family": "H",
+      "autocorr": 0.9758393294605773,
+      "turnover": 0.07257795100222716,
+      "book_size": 4.0,
+      "n_pairs": 4490,
+      "context": false
+    },
+    "realized_vol_percentile_90d": {
+      "family": "H",
+      "autocorr": 0.973883029621915,
+      "turnover": 0.09550953577684215,
+      "book_size": 4.0,
+      "n_pairs": 4382,
+      "context": false
+    },
+    "risk_adjusted_momentum": {
+      "family": "H",
+      "autocorr": 0.5882867448265581,
+      "turnover": 0.4523717807616113,
+      "book_size": 4.0,
+      "n_pairs": 4543,
+      "context": false
+    },
+    "vol_term_slope_8h_24h": {
+      "family": "H",
+      "autocorr": 0.9660890153313788,
+      "turnover": 0.09646081021576398,
+      "book_size": 4.0,
+      "n_pairs": 4542,
+      "context": false
+    },
+    "hurst_short": {
+      "family": "H",
+      "autocorr": 0.9882437686550893,
+      "turnover": 0.052794345040865914,
+      "book_size": 4.0,
+      "n_pairs": 4527,
+      "context": false
+    },
+    "hurst_short_minus_long": {
+      "family": "H",
+      "autocorr": 0.9862288078916424,
+      "turnover": 0.057988232631817155,
+      "book_size": 4.0,
+      "n_pairs": 4419,
+      "context": false
+    },
+    "hurst_change": {
+      "family": "H",
+      "autocorr": 0.983425056207613,
+      "turnover": 0.06448613928329952,
+      "book_size": 4.0,
+      "n_pairs": 4437,
+      "context": false
+    },
+    "semivar_ratio_1d": {
+      "family": "I",
+      "autocorr": 0.9777294579551503,
+      "turnover": 0.07093491510666086,
+      "book_size": 4.0,
+      "n_pairs": 4594,
+      "context": false
+    },
+    "max_daily_ret_30d": {
+      "family": "I",
+      "autocorr": 0.9910465369570821,
+      "turnover": 0.018845987454034176,
+      "book_size": 4.0,
+      "n_pairs": 4623,
+      "context": false
+    },
+    "realized_vol_ratio_1h_24h": {
+      "family": "I",
+      "autocorr": 0.9925136312991912,
+      "turnover": 0.033327829150154115,
+      "book_size": 4.0,
+      "n_pairs": 4542,
+      "context": false
+    },
+    "beta_change_3d_7d": {
+      "family": "I",
+      "autocorr": 0.8416218685161975,
+      "turnover": 0.24956868665085186,
+      "book_size": 4.0,
+      "n_pairs": 4637,
+      "context": false
+    },
+    "bar_range": {
+      "family": "I",
+      "autocorr": 0.5925167356981877,
+      "turnover": 0.46481620004274415,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "bar_range_zscore_30d": {
+      "family": "I",
+      "autocorr": 0.2959308645339115,
+      "turnover": 0.6355923043666234,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "bar_close_location": {
+      "family": "I",
+      "autocorr": -0.02364561423052709,
+      "turnover": 0.7883807081285175,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "bpv_zscore_30d": {
+      "family": "I",
+      "autocorr": 0.07209522656366818,
+      "turnover": 0.7565391266753134,
+      "book_size": 4.0,
+      "n_pairs": 4626,
+      "context": false
+    },
+    "basis_abs": {
+      "family": "I",
+      "autocorr": 0.185895322825108,
+      "turnover": 0.6857448172686471,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "basis_acceleration": {
+      "family": "I",
+      "autocorr": -0.5934969974778778,
+      "turnover": 0.9505291853752406,
+      "book_size": 4.0,
+      "n_pairs": 4677,
+      "context": false
+    },
+    "oi_drawdown_30d": {
+      "family": "I",
+      "autocorr": 0.9492413212288315,
+      "turnover": 0.14043841471312007,
+      "book_size": 4.0,
+      "n_pairs": 3310,
+      "context": false
+    },
+    "oi_distance_from_low_30d": {
+      "family": "I",
+      "autocorr": 0.9397905997271221,
+      "turnover": 0.1614336861768369,
+      "book_size": 4.0,
+      "n_pairs": 3218,
+      "context": false
+    },
+    "funding_rate_change": {
+      "family": "I",
+      "autocorr": -0.0169160364908587,
+      "turnover": 0.698899363731118,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "funding_rate_lag_1": {
+      "family": "I",
+      "autocorr": 0.6458599050689549,
+      "turnover": 0.4306168205275573,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    },
+    "funding_rate_lag_2": {
+      "family": "I",
+      "autocorr": 0.6465456586343331,
+      "turnover": 0.43181203576837096,
+      "book_size": 4.0,
+      "n_pairs": 4679,
+      "context": false
+    }
+  }
+}

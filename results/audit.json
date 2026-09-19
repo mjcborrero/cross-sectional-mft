@@ -1,0 +1,62 @@
+{
+  "placebo": {
+    "random_mean": 0.005248969681417986,
+    "random_sd": 0.5710800287911355,
+    "shuffled_mean": -0.03314589411505972,
+    "shuffled_sd": 0.5987723278212473,
+    "z": 5.006114582440965
+  },
+  "pnl_reconstruction_maxdiff": 0.0,
+  "target_identity_maxdiff": 0.0,
+  "invariants": {
+    "max_abs_sum_w": 1.6653345369377348e-16,
+    "max_gross_dev": 4.440892098500626e-16
+  },
+  "purge_min_gap_hours": 15.0,
+  "seal": {
+    "cache_end": "2024-12-31 08:00",
+    "spent": [
+      "holdout1"
+    ],
+    "feature_panel_end": "2026-08-29 16:00"
+  },
+  "concentration": {
+    "top_coin": "UNIUSDT",
+    "top_coin_share": 0.1491413971201835,
+    "best_month_share": 0.09413281829867748,
+    "months_positive": 24,
+    "months": 31
+  },
+  "ceiling": {
+    "perfect": 56.32413551817345,
+    "realised": 2.8641410295535277,
+    "fraction": 0.0508510428647305
+  },
+  "dose_response": [
+    {
+      "noise_x_sd": 0.0,
+      "sharpe": 2.8641410295535277
+    },
+    {
+      "noise_x_sd": 0.5,
+      "sharpe": 2.6907516124623796
+    },
+    {
+      "noise_x_sd": 1.0,
+      "sharpe": 2.245310440637638
+    },
+    {
+      "noise_x_sd": 2.0,
+      "sharpe": 1.602065765579923
+    },
+    {
+      "noise_x_sd": 4.0,
+      "sharpe": 1.5323979978798397
+    },
+    {
+      "noise_x_sd": 8.0,
+      "sharpe": 0.7124324139303362
+    }
+  ],
+  "failures": []
+}

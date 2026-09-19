@@ -1,0 +1,33 @@
+# Trading universe: 20 Binance USDT pairs, same names on spot and USDT-M perp.
+#
+# Membership is a manual, dated decision, not an automatic re-rank: crypto
+# delistings move faster than any schedule. Point-in-time membership means a
+# coin's historical panel rows remain after removal; history keeps the coins
+# that were members then.
+#
+# 2026-07-22: TONUSDT removed. Its Binance perp went dark on 2026-06-23
+#             (funding and klines stopped; caught by the reconciliation ledger).
+# 2026-07-31: AAVEUSDT added, restoring 20. Selected over ONDO/WLD/ENA/TAO on
+#             the joint criterion of liquidity (~$82M/day perp, ~7x the thinnest
+#             incumbent) AND history depth (perp since 2020-10, so the full
+#             research window is covered and every feature is warm).
+BTCUSDT
+ETHUSDT
+XRPUSDT
+BNBUSDT
+SOLUSDT
+DOGEUSDT
+ADAUSDT
+TRXUSDT
+LINKUSDT
+AVAXUSDT
+XLMUSDT
+LTCUSDT
+BCHUSDT
+DOTUSDT
+SUIUSDT
+HBARUSDT
+NEARUSDT
+ZECUSDT
+UNIUSDT
+AAVEUSDT

@@ -1,0 +1,372 @@
+{
+  "check": "sign_vs_prior",
+  "t_significant": 2.0,
+  "n_with_prior": 43,
+  "n_match": 23,
+  "n_significant": 21,
+  "n_significant_match": 11,
+  "binomial_p_significant": 1.0,
+  "excluded_no_direction": [
+    "beta_momentum",
+    "resid_reversal_8h",
+    "sector_belonging",
+    "sector_cohesion",
+    "sector_decoupling",
+    "sector_rel_agreement"
+  ],
+  "wrong_signed": {
+    "close_vs_vwap": {
+      "prior": "+",
+      "ic": -0.011123089029288285,
+      "t": -2.2095822092872384
+    },
+    "coin_sector_corr": {
+      "prior": "+",
+      "ic": -0.018241769095545732,
+      "t": -3.514837387048531
+    },
+    "corwin_schultz": {
+      "prior": "+",
+      "ic": -0.014080209598406182,
+      "t": -2.7934325020625868
+    },
+    "idio_vol_momentum": {
+      "prior": "\u2212",
+      "ic": 0.01258782164121738,
+      "t": 2.5941615099647817
+    },
+    "premium_reversion_speed": {
+      "prior": "\u2212",
+      "ic": 0.021524371231973573,
+      "t": 4.619239851005004
+    },
+    "realized_skew": {
+      "prior": "+",
+      "ic": -0.011206055065067388,
+      "t": -2.3841304545444797
+    },
+    "retail_attention_div": {
+      "prior": "\u2212",
+      "ic": 0.01187187569650078,
+      "t": 2.5443114883274967
+    },
+    "roll_spread": {
+      "prior": "+",
+      "ic": -0.013991142852365177,
+      "t": -2.982643962088604
+    },
+    "turnover": {
+      "prior": "+",
+      "ic": -0.017010888749491315,
+      "t": -3.567252992351413
+    },
+    "volume_concentration": {
+      "prior": "\u2212",
+      "ic": 0.010648035697228553,
+      "t": 2.2657454531298953
+    }
+  },
+  "per_feature": {
+    "aggressor_divergence": {
+      "code": "G4",
+      "prior": -1,
+      "ic": 0.002487616500416194,
+      "t": 0.5631419316478531,
+      "match": false
+    },
+    "basis_z": {
+      "code": "G1",
+      "prior": -1,
+      "ic": -0.006313879071544562,
+      "t": -1.417406501244527,
+      "match": true
+    },
+    "beta_instability": {
+      "code": "E8",
+      "prior": -1,
+      "ic": -0.002773267106059158,
+      "t": -0.5804648305863291,
+      "match": true
+    },
+    "close_vs_vwap": {
+      "code": "D4",
+      "prior": 1,
+      "ic": -0.011123089029288285,
+      "t": -2.2095822092872384,
+      "match": false
+    },
+    "coin_sector_corr": {
+      "code": "F3",
+      "prior": 1,
+      "ic": -0.018241769095545732,
+      "t": -3.514837387048531,
+      "match": false
+    },
+    "corr_btc_8h_90d": {
+      "code": "F5",
+      "prior": -1,
+      "ic": -0.0072017612088296976,
+      "t": -1.6077877775285532,
+      "match": true
+    },
+    "corwin_schultz": {
+      "code": "C8",
+      "prior": 1,
+      "ic": -0.014080209598406182,
+      "t": -2.7934325020625868,
+      "match": false
+    },
+    "crowd_winning": {
+      "code": "A5",
+      "prior": -1,
+      "ic": -0.00749794487488672,
+      "t": -1.5774660147036133,
+      "match": true
+    },
+    "dispersion_contribution": {
+      "code": "F11",
+      "prior": -1,
+      "ic": -0.014490400229248256,
+      "t": -3.2022156359155876,
+      "match": true
+    },
+    "drawdown_from_peak": {
+      "code": "E10",
+      "prior": 1,
+      "ic": -0.0013401935370877382,
+      "t": -0.26325883547891055,
+      "match": false
+    },
+    "funding_cum_7d": {
+      "code": "A2",
+      "prior": -1,
+      "ic": -0.019173810569848924,
+      "t": -4.253550806157168,
+      "match": true
+    },
+    "funding_sign_persist": {
+      "code": "A4",
+      "prior": -1,
+      "ic": -0.014932599460128069,
+      "t": -3.349087983715192,
+      "match": true
+    },
+    "funding_z": {
+      "code": "A1",
+      "prior": -1,
+      "ic": -0.0042249014920171975,
+      "t": -0.916038216598601,
+      "match": true
+    },
+    "idio_vol_momentum": {
+      "code": "E9",
+      "prior": -1,
+      "ic": 0.01258782164121738,
+      "t": 2.5941615099647817,
+      "match": false
+    },
+    "kyle_lambda": {
+      "code": "C4",
+      "prior": 1,
+      "ic": -0.007652889028378571,
+      "t": -1.5545270601738157,
+      "match": false
+    },
+    "move_timing": {
+      "code": "D7",
+      "prior": 1,
+      "ic": 0.005295725702641358,
+      "t": 1.1435087313297523,
+      "match": true
+    },
+    "oi_per_trade": {
+      "code": "B6",
+      "prior": -1,
+      "ic": -0.0012656451496039953,
+      "t": -0.283929341605366,
+      "match": true
+    },
+    "oi_price_corr": {
+      "code": "B2",
+      "prior": -1,
+      "ic": 0.001077648749823743,
+      "t": 0.24003500746368414,
+      "match": false
+    },
+    "oi_velocity_24h": {
+      "code": "B1",
+      "prior": -1,
+      "ic": -0.015221803252816985,
+      "t": -3.2762833128850386,
+      "match": true
+    },
+    "parkinson_ratio": {
+      "code": "D10",
+      "prior": -1,
+      "ic": -0.006948587439560788,
+      "t": -1.503868095202747,
+      "match": true
+    },
+    "perp_spot_leadlag": {
+      "code": "G6",
+      "prior": -1,
+      "ic": -0.0022644633361989367,
+      "t": -0.5087050929051523,
+      "match": true
+    },
+    "perp_spot_return_gap": {
+      "code": "G5",
+      "prior": -1,
+      "ic": 0.0034882747675348724,
+      "t": 0.781403589434253,
+      "match": false
+    },
+    "perp_spot_tradecount_ratio": {
+      "code": "G7",
+      "prior": -1,
+      "ic": -0.010738552370035799,
+      "t": -2.3023198374058076,
+      "match": true
+    },
+    "perp_spot_vol_ratio": {
+      "code": "G3",
+      "prior": -1,
+      "ic": -0.016399892653594057,
+      "t": -3.6000450386181084,
+      "match": true
+    },
+    "premium_range": {
+      "code": "G10",
+      "prior": -1,
+      "ic": -0.013359448206831928,
+      "t": -2.846373426859883,
+      "match": true
+    },
+    "premium_reversion_speed": {
+      "code": "C5",
+      "prior": -1,
+      "ic": 0.021524371231973573,
+      "t": 4.619239851005004,
+      "match": false
+    },
+    "premium_time_above_zero": {
+      "code": "G9",
+      "prior": -1,
+      "ic": -0.019418168451593727,
+      "t": -4.275436315623878,
+      "match": true
+    },
+    "premium_vol": {
+      "code": "G8",
+      "prior": -1,
+      "ic": -0.013579236833138303,
+      "t": -2.8463538781764304,
+      "match": true
+    },
+    "realized_kurt": {
+      "code": "D9",
+      "prior": -1,
+      "ic": 0.0055520834754763495,
+      "t": 1.176665379970605,
+      "match": false
+    },
+    "realized_skew": {
+      "code": "D8",
+      "prior": 1,
+      "ic": -0.011206055065067388,
+      "t": -2.3841304545444797,
+      "match": false
+    },
+    "retail_attention_div": {
+      "code": "D1",
+      "prior": -1,
+      "ic": 0.01187187569650078,
+      "t": 2.5443114883274967,
+      "match": false
+    },
+    "reversal_x_vr": {
+      "code": "E4",
+      "prior": 1,
+      "ic": 0.010953336153450777,
+      "t": 2.3512246913997297,
+      "match": true
+    },
+    "roll_spread": {
+      "code": "C3",
+      "prior": 1,
+      "ic": -0.013991142852365177,
+      "t": -2.982643962088604,
+      "match": false
+    },
+    "sector_dispersion": {
+      "code": "F7",
+      "prior": 1,
+      "ic": -0.009762564425632272,
+      "t": -1.968336059230483,
+      "match": false
+    },
+    "sector_rel_reversal_8h": {
+      "code": "F1",
+      "prior": 1,
+      "ic": 0.005803255871075147,
+      "t": 1.2647576083901486,
+      "match": true
+    },
+    "session_rel_volume": {
+      "code": "E14",
+      "prior": -1,
+      "ic": -0.021387588754099403,
+      "t": -4.415711056269082,
+      "match": true
+    },
+    "turnover": {
+      "code": "B7",
+      "prior": 1,
+      "ic": -0.017010888749491315,
+      "t": -3.567252992351413,
+      "match": false
+    },
+    "variance_ratio_72h": {
+      "code": "E3",
+      "prior": -1,
+      "ic": 0.0030168888646298136,
+      "t": 0.6598188201669037,
+      "match": false
+    },
+    "volume_concentration": {
+      "code": "D3",
+      "prior": -1,
+      "ic": 0.010648035697228553,
+      "t": 2.2657454531298953,
+      "match": false
+    },
+    "volume_return_coupling": {
+      "code": "D11",
+      "prior": -1,
+      "ic": -0.0005999572433806835,
+      "t": -0.12849316434862024,
+      "match": true
+    },
+    "volume_share_rotation": {
+      "code": "E13",
+      "prior": -1,
+      "ic": 0.0022191595140300846,
+      "t": 0.45795275420540305,
+      "match": false
+    },
+    "vpin_perp_z": {
+      "code": "C6",
+      "prior": -1,
+      "ic": 0.008217913204062788,
+      "t": 1.7886348493866302,
+      "match": false
+    },
+    "zero_return_minutes": {
+      "code": "C1",
+      "prior": 1,
+      "ic": 0.005345037576379108,
+      "t": 1.1093230910702465,
+      "match": true
+    }
+  }
+}

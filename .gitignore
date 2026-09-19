@@ -1,0 +1,21 @@
+# Market data and every derived artifact live OUTSIDE the repo.
+# Set MFT_DATA_DIR; the default is ./data, excluded here.
+/data/
+*.parquet
+*.zip
+*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

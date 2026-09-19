@@ -1,0 +1,533 @@
+{
+  "frozen": true,
+  "n_features": 72,
+  "features": {
+    "aggressor_divergence": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.07057631101976393,
+      "autocorr": 0.18060897986723914,
+      "turnover": 0.6901581534515923
+    },
+    "bar_close_location": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.11408946250294874,
+      "autocorr": -0.02364561423052709,
+      "turnover": 0.7883807081285175
+    },
+    "bar_range_zscore_30d": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.07298853752027126,
+      "autocorr": 0.2959308645339115,
+      "turnover": 0.6355923043666234
+    },
+    "basis_abs": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.13488841169848062,
+      "autocorr": 0.185895322825108,
+      "turnover": 0.6857448172686471
+    },
+    "basis_acceleration": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.02798356184579096,
+      "autocorr": -0.5934969974778778,
+      "turnover": 0.9505291853752406
+    },
+    "basis_z": {
+      "family": "G",
+      "context": false,
+      "persistence": -0.04304142709715465,
+      "autocorr": 0.18194090215731273,
+      "turnover": 0.6963899697362732
+    },
+    "beta_change_3d_7d": {
+      "family": "I",
+      "context": false,
+      "persistence": -0.056168914934394805,
+      "autocorr": 0.8416218685161975,
+      "turnover": 0.24956868665085186
+    },
+    "beta_instability": {
+      "family": "E",
+      "context": false,
+      "persistence": 0.24502801120448178,
+      "autocorr": 0.996177242237574,
+      "turnover": 0.022727272727272728
+    },
+    "beta_momentum": {
+      "family": "E",
+      "context": false,
+      "persistence": -0.012979139024030667,
+      "autocorr": 0.9869928921569382,
+      "turnover": 0.04727030625832224
+    },
+    "bpv_zscore_30d": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.046759361639392594,
+      "autocorr": 0.07209522656366818,
+      "turnover": 0.7565391266753134
+    },
+    "btc_resid_lag": {
+      "family": "F",
+      "context": true,
+      "persistence": null,
+      "autocorr": null,
+      "turnover": null
+    },
+    "close_vs_vwap": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.06948986786903376,
+      "autocorr": -0.04269757983137644,
+      "turnover": 0.7752190639025432
+    },
+    "coin_sector_corr": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.759521232845102,
+      "autocorr": 0.9982052390037399,
+      "turnover": 0.01164298601714028
+    },
+    "corr_btc_8h_90d": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.5880436385080348,
+      "autocorr": 0.9974521287016292,
+      "turnover": 0.011927164046933806
+    },
+    "corwin_schultz": {
+      "family": "C",
+      "context": false,
+      "persistence": 0.6149998157157599,
+      "autocorr": 0.9943799702349604,
+      "turnover": 0.033
+    },
+    "crowd_winning": {
+      "family": "A",
+      "context": false,
+      "persistence": 0.025058049535603706,
+      "autocorr": -0.011713129716861278,
+      "turnover": 0.7527050421986583
+    },
+    "dispersion_contribution": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.03654817190033907,
+      "autocorr": 0.10782931370119461,
+      "turnover": 0.7354221061792864
+    },
+    "drawdown_from_peak": {
+      "family": "E",
+      "context": false,
+      "persistence": 0.22704581407300273,
+      "autocorr": 0.9358079993327151,
+      "turnover": 0.1472783211147104
+    },
+    "eth_resid_lag": {
+      "family": "F",
+      "context": true,
+      "persistence": null,
+      "autocorr": null,
+      "turnover": null
+    },
+    "funding_cum_7d": {
+      "family": "A",
+      "context": false,
+      "persistence": 0.2759856910595068,
+      "autocorr": 0.9833320864647725,
+      "turnover": 0.06223882212839666
+    },
+    "funding_rate_change": {
+      "family": "I",
+      "context": false,
+      "persistence": -0.021884067915977502,
+      "autocorr": -0.0169160364908587,
+      "turnover": 0.698899363731118
+    },
+    "funding_rate_lag_1": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.1500995158036697,
+      "autocorr": 0.6458599050689549,
+      "turnover": 0.4306168205275573
+    },
+    "funding_rate_lag_2": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.20554518791034943,
+      "autocorr": 0.6465456586343331,
+      "turnover": 0.43181203576837096
+    },
+    "funding_sign_persist": {
+      "family": "A",
+      "context": false,
+      "persistence": 0.3868814752913605,
+      "autocorr": 0.9378459925448923,
+      "turnover": 0.10335470020091997
+    },
+    "funding_z": {
+      "family": "A",
+      "context": false,
+      "persistence": 0.0909218748228036,
+      "autocorr": 0.5793128291127526,
+      "turnover": 0.40281042957896984
+    },
+    "hurst_change": {
+      "family": "H",
+      "context": false,
+      "persistence": -0.07462406015037593,
+      "autocorr": 0.983425056207613,
+      "turnover": 0.06448613928329952
+    },
+    "hurst_short_minus_long": {
+      "family": "H",
+      "context": false,
+      "persistence": -0.0722781217750258,
+      "autocorr": 0.9862288078916424,
+      "turnover": 0.057988232631817155
+    },
+    "idio_vol_momentum": {
+      "family": "E",
+      "context": false,
+      "persistence": 0.058558160106147714,
+      "autocorr": 0.9887919956646741,
+      "turnover": 0.042554371948513095
+    },
+    "kyle_lambda": {
+      "family": "C",
+      "context": false,
+      "persistence": 0.8505912272029554,
+      "autocorr": 0.9432056400899912,
+      "turnover": 0.14760098311605044
+    },
+    "max_daily_ret_30d": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.1327390166592953,
+      "autocorr": 0.9910465369570821,
+      "turnover": 0.018845987454034176
+    },
+    "move_timing": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.08770782425854362,
+      "autocorr": 0.02227619291679417,
+      "turnover": 0.7670709553323359
+    },
+    "oi_per_trade": {
+      "family": "B",
+      "context": false,
+      "persistence": 0.07610693400167089,
+      "autocorr": 0.016327286792736328,
+      "turnover": 0.6301354569812444
+    },
+    "oi_price_corr": {
+      "family": "B",
+      "context": false,
+      "persistence": 0.31886534518113463,
+      "autocorr": 0.9903262909996354,
+      "turnover": 0.03890903596252644
+    },
+    "oi_velocity_24h": {
+      "family": "B",
+      "context": false,
+      "persistence": -0.04515455304928989,
+      "autocorr": 0.5912212841202644,
+      "turnover": 0.45148418854415273
+    },
+    "parkinson_ratio": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.15533070098722984,
+      "autocorr": 0.4894974825677255,
+      "turnover": 0.5373210087625561
+    },
+    "perp_spot_leadlag": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.3199110365746679,
+      "autocorr": 0.9712726082191284,
+      "turnover": 0.08455332335969225
+    },
+    "perp_spot_return_gap": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.045956853806061584,
+      "autocorr": -0.424162514745829,
+      "turnover": 0.9050812139346014
+    },
+    "perp_spot_tradecount_ratio": {
+      "family": "G",
+      "context": false,
+      "persistence": -0.05164750110570545,
+      "autocorr": 0.5566705825053673,
+      "turnover": 0.4976491569390402
+    },
+    "perp_spot_vol_ratio": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.10698160843284682,
+      "autocorr": 0.4917844752944459,
+      "turnover": 0.5367758322524859
+    },
+    "premium_range": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.21375057286548818,
+      "autocorr": 0.5807650889170806,
+      "turnover": 0.47794117647058826
+    },
+    "premium_reversion_speed": {
+      "family": "C",
+      "context": false,
+      "persistence": 0.18830705656875754,
+      "autocorr": 0.8337929647482178,
+      "turnover": 0.274442538593482
+    },
+    "premium_time_above_zero": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.20579135038514265,
+      "autocorr": 0.7540050251291078,
+      "turnover": 0.4027057114434146
+    },
+    "premium_vol": {
+      "family": "G",
+      "context": false,
+      "persistence": 0.4564922253731214,
+      "autocorr": 0.7894089348701888,
+      "turnover": 0.31255367110347787
+    },
+    "realized_kurt": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.1381617471947102,
+      "autocorr": 0.1969464142659221,
+      "turnover": 0.6986802735627271
+    },
+    "realized_skew": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.050613224570609384,
+      "autocorr": 0.0833120256798447,
+      "turnover": 0.7375507587091259
+    },
+    "realized_vol_percentile_90d": {
+      "family": "H",
+      "context": false,
+      "persistence": -0.08543792639315138,
+      "autocorr": 0.973883029621915,
+      "turnover": 0.09550953577684215
+    },
+    "realized_vol_ratio_1h_24h": {
+      "family": "I",
+      "context": false,
+      "persistence": 0.2683740601503759,
+      "autocorr": 0.9925136312991912,
+      "turnover": 0.033327829150154115
+    },
+    "realized_vol_zscore_30d": {
+      "family": "H",
+      "context": false,
+      "persistence": -0.04966091699837831,
+      "autocorr": 0.9758393294605773,
+      "turnover": 0.07257795100222716
+    },
+    "resid_lag_16h": {
+      "family": "H",
+      "context": false,
+      "persistence": 0.07992591773551525,
+      "autocorr": -0.022791302282338517,
+      "turnover": 0.7715770570309098
+    },
+    "resid_lag_40h": {
+      "family": "H",
+      "context": false,
+      "persistence": -0.14517728143889133,
+      "autocorr": -0.022743634206044513,
+      "turnover": 0.7714822478762797
+    },
+    "resid_lag_8h": {
+      "family": "H",
+      "context": false,
+      "persistence": -0.007446926138876601,
+      "autocorr": -0.02277128830309735,
+      "turnover": 0.7715451577801958
+    },
+    "resid_reversal_8h": {
+      "family": "E",
+      "context": false,
+      "persistence": 0.04324506118236768,
+      "autocorr": -0.022762407449945683,
+      "turnover": 0.7715404699738904
+    },
+    "resid_sum_20": {
+      "family": "H",
+      "context": false,
+      "persistence": 0.06867536488279521,
+      "autocorr": 0.9172666230530993,
+      "turnover": 0.1883587786259542
+    },
+    "resid_sum_5": {
+      "family": "H",
+      "context": false,
+      "persistence": 0.051864956508919355,
+      "autocorr": 0.7292332051709051,
+      "turnover": 0.3613136700043535
+    },
+    "retail_attention_div": {
+      "family": "D",
+      "context": false,
+      "persistence": -0.02133458646616542,
+      "autocorr": 0.6409665020499019,
+      "turnover": 0.43177150886294857
+    },
+    "reversal_x_vr": {
+      "family": "E",
+      "context": false,
+      "persistence": -0.049036193424738306,
+      "autocorr": -0.006085840836861965,
+      "turnover": 0.7166252541224305
+    },
+    "roll_spread": {
+      "family": "C",
+      "context": false,
+      "persistence": 0.07256965170862847,
+      "autocorr": 0.6616920204714194,
+      "turnover": 0.4441245184157806
+    },
+    "sector_belonging": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.7630275136370337,
+      "autocorr": 0.9981501101577521,
+      "turnover": 0.011953089760938205
+    },
+    "sector_cohesion": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.8035249192585958,
+      "autocorr": 0.9963188592832812,
+      "turnover": 0.006111862877762743
+    },
+    "sector_decoupling": {
+      "family": "F",
+      "context": false,
+      "persistence": -0.08868399821159001,
+      "autocorr": 0.9860293200753626,
+      "turnover": 0.0529149751917005
+    },
+    "sector_dispersion": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.10711587137424203,
+      "autocorr": 0.17735870937810108,
+      "turnover": 0.7300696257615318
+    },
+    "sector_rel_agreement": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.06839709568037741,
+      "autocorr": 0.6383016809521149,
+      "turnover": 0.4297214969538729
+    },
+    "sector_rel_reversal_8h": {
+      "family": "F",
+      "context": false,
+      "persistence": 0.10595698805838123,
+      "autocorr": -0.013615821644703738,
+      "turnover": 0.7692830722367275
+    },
+    "session_rel_volume": {
+      "family": "E",
+      "context": false,
+      "persistence": -0.05555524841515552,
+      "autocorr": 0.699825803657869,
+      "turnover": 0.37799223635971535
+    },
+    "term_basis_slope": {
+      "family": "G",
+      "context": true,
+      "persistence": null,
+      "autocorr": null,
+      "turnover": null
+    },
+    "turnover": {
+      "family": "B",
+      "context": false,
+      "persistence": 0.4013157894736841,
+      "autocorr": 0.7987589306326379,
+      "turnover": 0.31946098868374034
+    },
+    "variance_ratio_72h": {
+      "family": "E",
+      "context": false,
+      "persistence": 0.18601743328910514,
+      "autocorr": 0.9927291020869923,
+      "turnover": 0.034024169866726905
+    },
+    "volume_concentration": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.2647474422014578,
+      "autocorr": 0.3647196539915431,
+      "turnover": 0.6107341312246206
+    },
+    "volume_return_coupling": {
+      "family": "D",
+      "context": false,
+      "persistence": 0.11594123717598495,
+      "autocorr": 0.2649176437814779,
+      "turnover": 0.6690799316093182
+    },
+    "volume_share_rotation": {
+      "family": "E",
+      "context": false,
+      "persistence": 0.020053810998083448,
+      "autocorr": 0.31411486627666696,
+      "turnover": 0.5230164670658682
+    },
+    "vpin_perp_z": {
+      "family": "C",
+      "context": false,
+      "persistence": -0.07260430487984668,
+      "autocorr": 0.07606687335634953,
+      "turnover": 0.754863813229572
+    },
+    "zero_return_minutes": {
+      "family": "C",
+      "context": false,
+      "persistence": 0.6806241724231582,
+      "autocorr": 0.8795778239687968,
+      "turnover": 0.25862697138780605
+    }
+  },
+  "removed": {
+    "oi_distance_from_low_30d": "stage3_persistence=-0.042",
+    "hurst_short": "stage3_persistence=-0.008",
+    "semivar_ratio_1d": "stage3_persistence=0.010",
+    "vol_term_slope": "stage3_persistence=0.014",
+    "vol_term_slope_8h_24h": "stage3_persistence=0.061",
+    "order_flow_autocorr": "stage3_persistence=0.096",
+    "oi_drawdown_30d": "stage3_persistence=0.130",
+    "resid_reversal_agreement": "multivariate_r2=0.869",
+    "jump_share": "multivariate_r2=0.849",
+    "idio_share": "multivariate_r2=0.805",
+    "risk_adjusted_momentum": "multivariate_r2=0.801",
+    "bar_range": "multivariate_r2=0.801"
+  },
+  "rules": {
+    "stage3_persistence_min": 0.15,
+    "stage4_multivariate_r2_max": 0.8,
+    "multivariate_applied": "iteratively, recomputed after each removal",
+    "benchmark_exempt": "resid_reversal_8h",
+    "stage2_deletes": false,
+    "stage5_deletes": false
+  },
+  "content_hash": "bd22067e3d6325e0"
+}

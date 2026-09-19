@@ -1,0 +1,38 @@
+{
+  "TRAIN": {
+    "win3": {
+      "rank_corr": 0.6057712409246246,
+      "p_violent_given_quiet": 0.11571125265392782
+    },
+    "win9": {
+      "rank_corr": 0.6146606669156996,
+      "p_violent_given_quiet": 0.10987261146496816
+    },
+    "win30": {
+      "rank_corr": 0.5835736088642275,
+      "p_violent_given_quiet": 0.12287234042553191
+    },
+    "win90": {
+      "rank_corr": 0.5163144265652413,
+      "p_violent_given_quiet": 0.14598930481283423
+    }
+  },
+  "2026": {
+    "win3": {
+      "rank_corr": 0.3800494636659855,
+      "p_violent_given_quiet": 0.1943127962085308
+    },
+    "win9": {
+      "rank_corr": 0.35529346185022465,
+      "p_violent_given_quiet": 0.22380952380952382
+    },
+    "win30": {
+      "rank_corr": 0.3185156597290019,
+      "p_violent_given_quiet": 0.20388349514563106
+    },
+    "win90": {
+      "rank_corr": 0.25079569837381277,
+      "p_violent_given_quiet": 0.24489795918367346
+    }
+  }
+}

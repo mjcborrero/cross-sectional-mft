@@ -1,0 +1,12 @@
+{
+  "failures": [
+    "every input dataset reaches within 24h of the panel end"
+  ],
+  "notes": {
+    "grid_gaps": [
+      "2022-02-25 16:00",
+      "2022-03-31 16:00"
+    ],
+    "weight_max": 0.7009541939099333
+  }
+}
